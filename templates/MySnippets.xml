@@ -1,0 +1,7 @@
+<templateSet group="MySnippets">
+  <template name="TAsyncTask" value="// new LongOperation().execute(&quot;&quot;);&#10;private class LongOperation extends AsyncTask&lt;String, Void, String&gt; {&#10;&#10;        @Override&#10;        protected String doInBackground(String... params) {&#10;            for (int i = 0; i &lt; 5; i++) {&#10;                try {&#10;                    Thread.sleep(1000);&#10;                } catch (InterruptedException e) {&#10;                    Thread.interrupted();&#10;                }&#10;            }&#10;            return &quot;Executed&quot;;&#10;        }&#10;&#10;        @Override&#10;        protected void onPostExecute(String result) {&#10;            TextView txt = (TextView) findViewById(R.id.output);&#10;            txt.setText(&quot;Executed&quot;); // txt.setText(result);&#10;            // might want to change &quot;executed&quot; for the returned string passed&#10;            // into onPostExecute() but that is upto you&#10;        }&#10;&#10;        @Override&#10;        protected void onPreExecute() {}&#10;&#10;        @Override&#10;        protected void onProgressUpdate(Void... values) {}&#10;}" description="Create new AsyncTask" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+</templateSet>
