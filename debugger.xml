@@ -78,14 +78,12 @@
   </component>
   <component name="NodeRendererSettings">
     <Renderer ID="ToStringRenderer">
-      <option name="ENABLED" value="false" />
+      <option name="ON_DEMAND" value="true" />
     </Renderer>
   </component>
   <component name="XDebuggerSettings">
     <data-views />
-    <general>
-      <evaluation-dialog-mode>CODE_FRAGMENT</evaluation-dialog-mode>
-    </general>
+    <general />
     <debuggers>
       <debugger id="ObjectiveC">
         <configuration>
