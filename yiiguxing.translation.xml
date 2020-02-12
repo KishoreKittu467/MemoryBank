@@ -1,7 +1,13 @@
 <application>
   <component name="AppStorage">
     <histories>
+      <item value="Ok Http" />
       <item value="Kishore" />
     </histories>
+    <option name="languageScores">
+      <map>
+        <entry key="ENGLISH" value="2" />
+      </map>
+    </option>
   </component>
 </application>
