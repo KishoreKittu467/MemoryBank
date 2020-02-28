@@ -8,6 +8,9 @@
     <keyboard-shortcut first-keystroke="shift tab" />
     <keyboard-shortcut first-keystroke="shift ctrl tab" />
   </action>
+  <action id="StringManipulation.SwitchStyleAction">
+    <keyboard-shortcut first-keystroke="alt s" />
+  </action>
   <action id="Switcher">
     <keyboard-shortcut first-keystroke="ctrl tab" />
   </action>
