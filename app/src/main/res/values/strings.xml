@@ -1,6 +1,8 @@
 <resources>
-    <string name="app_name">Back Pocket</string>
-    <string name="tab_text_1">Tab 1</string>
-    <string name="tab_text_2">Tab 2</string>
-    <string name="tab_text_3">Tab 3</string>
+    <string name="app_name">MemoryBank</string>
+    <string name="tab_text_1">Home</string>
+    <string name="tab_text_2">TimeLine</string>
+    <string name="tab_text_3">More</string>
+
+    <string name="contentDesc">Image</string>
 </resources>
