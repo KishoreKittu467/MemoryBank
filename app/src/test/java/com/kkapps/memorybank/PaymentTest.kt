@@ -1,9 +1,9 @@
 package com.kkapps.memorybank
 
-import com.kkapps.memorybank.models.Image
-import com.kkapps.memorybank.models.FieldType
-import com.kkapps.memorybank.models.PersonLite
-import com.kkapps.memorybank.models.elements.Payment
+import com.kkapps.memorybank.home.models.Image
+import com.kkapps.memorybank.home.models.FieldType
+import com.kkapps.memorybank.home.models.PersonLite
+import com.kkapps.memorybank.home.models.elements.Payment
 import com.kkapps.memorybank.utils.Constants
 import junit.framework.Assert.assertEquals
 import org.junit.Test
