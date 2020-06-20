@@ -438,4 +438,12 @@
     <color name="md_yellow_700_dark">#FBB504</color>
     <color name="md_yellow_800_dark">#EF9606</color>
     <color name="md_yellow_900_dark">#DA6B09</color>
+
+    <!--sticky timeline-->
+    <color name="colorDefaultBackground">#F9F9F9</color>
+    <color name="colorDefaultTitle">#414fca</color>
+    <color name="colorDefaultSubTitle">#d16767</color>
+    <color name="colorDefaultLine">#51ae45</color>
+    <color name="colorDefaultCircle">#51ae45</color>
+    <color name="colorDefaultStroke">#F9F9F9</color>
 </resources>

@@ -177,3 +177,7 @@ fun Int.getColorStateList(): ColorStateList {
     val colors = intArrayOf(this, this, this, this)
     return ColorStateList(states, colors)
 }
+
+fun Int.DP(context: Context): Float = (this * context.resources.displayMetrics.density)
+
+fun Float.DP(context: Context): Float = (this * context.resources.displayMetrics.density)
