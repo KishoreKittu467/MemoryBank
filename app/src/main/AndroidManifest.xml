@@ -170,6 +170,8 @@
             android:name=".calendar.activities.SnoozeReminderActivity"
             android:theme="@style/Theme.Transparent" />
 
+        <activity android:name=".stickytimeline.sampleapp.StickyTimelineActivity" />
+
         <receiver
             android:name=".calendar.helpers.MyWidgetMonthlyProvider"
             android:icon="@drawable/img_widget_monthly_preview"
