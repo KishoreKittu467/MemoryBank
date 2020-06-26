@@ -19,6 +19,8 @@
     <color name="hint_black">#66000000</color>
     <color name="white">#FFFFFFFF</color>
 
+    <color name="button_background_color">#6CCF98</color>
+
     <!-- Color Customization -->
     <color name="theme_light_text_color">@color/md_grey_600</color>
     <color name="theme_light_background_color">@color/md_grey_white</color>

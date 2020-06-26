@@ -32,7 +32,7 @@ data class Task(
 
     private fun calculateStatus() {
         subTasks?.apply {
-            isCompleted = all{ task ->  task.isCompleted }
+            isCompleted = all { task ->  task.isCompleted }
         }
     }
 }

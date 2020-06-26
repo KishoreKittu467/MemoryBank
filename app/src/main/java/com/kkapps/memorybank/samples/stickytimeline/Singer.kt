@@ -1,4 +1,4 @@
-package com.kkapps.memorybank.stickytimeline.sampleapp
+package com.kkapps.memorybank.samples.stickytimeline
 
 /**
  * Created by seokwon.jeong on 20/11/2017.

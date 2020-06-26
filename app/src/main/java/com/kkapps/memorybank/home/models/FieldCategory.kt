@@ -1,7 +1,7 @@
 package com.kkapps.memorybank.home.models
 
-import com.kkapps.memorybank.utils.Constants
-import com.kkapps.memorybank.utils.Constants.Field
+import com.kkapps.memorybank.commons.utils.Constants
+import com.kkapps.memorybank.commons.utils.Constants.Field
 
 sealed class FieldCategory(val fieldCategory: Field) {
 

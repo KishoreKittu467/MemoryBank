@@ -170,7 +170,13 @@
             android:name=".calendar.activities.SnoozeReminderActivity"
             android:theme="@style/Theme.Transparent" />
 
-        <activity android:name=".stickytimeline.sampleapp.StickyTimelineActivity" />
+        <!--Samples-->
+        <activity android:name=".samples.stickytimeline.StickyTimelineActivity">
+        </activity>
+        <activity android:name=".samples.calendar.SimpleCalendarActivity">
+        </activity>
+        <activity android:name=".samples.bubbleheads.OverlapImageViewOverlapActivity">
+        </activity>
 
         <receiver
             android:name=".calendar.helpers.MyWidgetMonthlyProvider"

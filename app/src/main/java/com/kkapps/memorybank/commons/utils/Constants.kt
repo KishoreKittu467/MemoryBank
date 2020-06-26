@@ -1,4 +1,4 @@
-package com.kkapps.memorybank.utils
+package com.kkapps.memorybank.commons.utils
 
 object Constants {
 

@@ -1,4 +1,4 @@
-package com.kkapps.memorybank.stickytimeline.sampleapp
+package com.kkapps.memorybank.samples.stickytimeline
 
 import androidx.annotation.LayoutRes
 import androidx.recyclerview.widget.RecyclerView
@@ -19,7 +19,9 @@ class SingerAdapter(private val layoutInflater: LayoutInflater,
         val v = layoutInflater.inflate(rowLayout,
                 parent,
                 false)
-        return ViewHolder(v)
+        return ViewHolder(
+            v
+        )
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {

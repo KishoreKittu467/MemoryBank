@@ -2,7 +2,7 @@ package com.kkapps.memorybank.home.models
 
 import androidx.room.ColumnInfo
 import androidx.room.PrimaryKey
-import com.kkapps.memorybank.utils.Constants
+import com.kkapps.memorybank.commons.utils.Constants
 
 data class Person(
 

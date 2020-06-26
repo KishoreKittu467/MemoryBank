@@ -6,7 +6,7 @@ import com.kkapps.memorybank.home.models.FieldType
 import com.kkapps.memorybank.home.models.Image
 import com.kkapps.memorybank.home.models.Recursion
 import com.kkapps.memorybank.home.models.Entity
-import com.kkapps.memorybank.utils.Constants
+import com.kkapps.memorybank.commons.utils.Constants
 
 data class Mood (
 
