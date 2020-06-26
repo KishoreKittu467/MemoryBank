@@ -171,13 +171,20 @@
             android:theme="@style/Theme.Transparent" />
 
         <!--Samples-->
-        <activity android:name=".samples.stickytimeline.StickyTimelineActivity">
+        <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        -->
+        <activity android:name=".demos.stickytimeline.StickyTimelineActivity">
         </activity>
-        <activity android:name=".samples.calendar.SimpleCalendarActivity">
+        <activity android:name=".demos.calendar.SimpleCalendarActivity">
         </activity>
-        <activity android:name=".samples.bubbleheads.OverlapImageViewOverlapActivity">
+        <activity android:name=".demos.bubbleheads.OverlapImageViewOverlapActivity">
         </activity>
-
+        <activity android:name=".demos.draggabletree.DraggableTreeActivity">
+        </activity>
         <receiver
             android:name=".calendar.helpers.MyWidgetMonthlyProvider"
             android:icon="@drawable/img_widget_monthly_preview"

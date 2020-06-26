@@ -1,4 +1,4 @@
-package com.kkapps.memorybank.samples.stickytimeline
+package com.kkapps.memorybank.demos.stickytimeline
 
 import android.graphics.drawable.Drawable
 import android.os.Bundle
@@ -8,9 +8,6 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.kkapps.memorybank.ItemDecoration.VerticalSectionItemDecoration
 import com.kkapps.memorybank.R
-import com.kkapps.memorybank.samples.stickytimeline.Singer
-import com.kkapps.memorybank.samples.stickytimeline.SingerAdapter
-import com.kkapps.memorybank.samples.stickytimeline.SingerRepo
 import com.kkapps.memorybank.stickytimeline.*
 import kotlinx.android.synthetic.main.sticky_timeline_activity.*
 

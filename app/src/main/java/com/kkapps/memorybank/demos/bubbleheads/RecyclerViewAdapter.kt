@@ -1,4 +1,4 @@
-package com.kkapps.memorybank.samples.bubbleheads
+package com.kkapps.memorybank.demos.bubbleheads
 
 import android.graphics.Color
 import android.view.LayoutInflater

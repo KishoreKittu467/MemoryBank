@@ -1,6 +1,5 @@
-package com.kkapps.memorybank.samples.stickytimeline
+package com.kkapps.memorybank.demos.stickytimeline
 
-import com.kkapps.memorybank.samples.stickytimeline.Singer
 import java.util.*
 
 /**

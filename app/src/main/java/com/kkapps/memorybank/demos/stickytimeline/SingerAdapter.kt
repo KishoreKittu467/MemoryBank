@@ -1,4 +1,4 @@
-package com.kkapps.memorybank.samples.stickytimeline
+package com.kkapps.memorybank.demos.stickytimeline
 
 import androidx.annotation.LayoutRes
 import androidx.recyclerview.widget.RecyclerView

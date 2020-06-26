@@ -1,4 +1,4 @@
-package com.kkapps.memorybank.samples.calendar
+package com.kkapps.memorybank.demos.calendar
 
 import android.annotation.SuppressLint
 import android.app.Activity
@@ -60,7 +60,7 @@ import kotlin.collections.ArrayList
 
 /*
 *         <activity
-            android:name=".samples.calendar.MainActivity"
+            android:name=".demos.calendar.MainActivity"
             android:launchMode="singleTask">
             <meta-data
                 android:name="android.app.default_searchable"
