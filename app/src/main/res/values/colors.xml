@@ -448,4 +448,13 @@
     <color name="colorDefaultLine">#51ae45</color>
     <color name="colorDefaultCircle">#51ae45</color>
     <color name="colorDefaultStroke">#F9F9F9</color>
+    <color name="colorSecondaryVariant">#006064</color>
+    <color name="colorBackground">#ffffff</color>
+    <color name="colorSurface">#ffffff</color>
+    <color name="colorError">#B71C1C</color>
+    <color name="colorOnPrimary">#ffffff</color>
+    <color name="colorOnSecondary">#ffffff</color>
+    <color name="colorOnBackground">#000000</color>
+    <color name="colorOnSurface">#515151</color>
+    <color name="colorOnError">#ffffff</color>
 </resources>

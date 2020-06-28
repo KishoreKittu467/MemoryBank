@@ -1079,4 +1079,46 @@
     <!--  Bubble heads -->
     <string name="animation_type">Animation Type</string>
     <string name="orientation">Orientation</string>
+
+    <!--Calculator-->
+    <string name="calc_dialog_clear">Clear</string>
+    <string name="calc_dialog_cancel">Cancel</string>
+    <string name="calc_dialog_ok">OK</string>
+
+    <string name="calc_answer">Ans</string>
+
+    <string-array name="calc_dialog_errors">
+        <item>Division by zero</item>
+        <item>Out of bounds</item>
+        <item>Result must be positive</item>
+        <item>Result must be negative</item>
+    </string-array>
+
+    <string name="calc_dialog_erase">Erase</string>
+    <string name="open_dialog">Open dialog</string>
+
+    <string name="header_selection">Selected value</string>
+    <string name="selection_value_none">None</string>
+
+    <string name="header_options_calc">Calculator options</string>
+    <string name="calc_dark_theme">Dark theme</string>
+    <string name="calc_show_expr">Show expression</string>
+    <string name="calc_expr_editable">Expression can be edited</string>
+    <string name="calc_show_sign_btn">Show sign button</string>
+    <string name="calc_show_ans_btn">Show answer button</string>
+    <string name="calc_order_operation">Apply order of operations</string>
+    <string name="calc_eval_operation">Evaluate expression on operation</string>
+    <string name="calc_show_zero">Show zero when there is no value</string>
+    <string name="calc_min_value">Minimum value:</string>
+    <string name="calc_max_value">Maximum value:</string>
+    <string name="calc_numpad">Numpad layout:</string>
+    <string name="calc_numpad_calc">Calculator (789 on top)</string>
+    <string name="calc_numpad_phone">Phone (123 on top)</string>
+
+    <string name="header_options_nbfmt">Number format options</string>
+    <string name="nbfmt_label">Number format:</string>
+    <string name="nbfmt_default">Default</string>
+    <string name="nbfmt_currency">Currency</string>
+    <string name="nbfmt_max_int">Maximum integer digits:</string>
+    <string name="nbfmt_max_frac">Maximum fraction digits:</string>
 </resources>
