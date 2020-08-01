@@ -69,6 +69,6 @@ object Constants {
     val RELATION_FIELDS = mutableSetOf(RELATION_SIS)
 
     enum class GENDER {
-        MALE, FEMALE
+        MALE, FEMALE, UNKNOWN
     }
 }

@@ -10,6 +10,7 @@ class SimpleTreeViewAdapter(
     context: Context?,
     root: TreeNode?
 ) : TreeViewAdapter(context, root) {
+
     override fun createTreeView(
         context: Context?,
         node: TreeNode?,

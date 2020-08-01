@@ -19,8 +19,8 @@ import android.widget.ScrollView
 import java.util.*
 
 class DraggableTreeView : FrameLayout {
-    var mRootLayout: ScrollView? = null
-    var mParentLayout: LinearLayout? = null
+    private var mRootLayout: ScrollView? = null
+    private var mParentLayout: LinearLayout? = null
     private var adapter: TreeViewAdapter? = null
     private var mHoverCell: BitmapDrawable? = null
     private var mHoverCellCurrentBounds: Rect? = null
@@ -33,7 +33,7 @@ class DraggableTreeView : FrameLayout {
         above_sibling, below_sibling, child, cancel
     }
 
-    var drop_item: Drop? = null
+    private var dropItem: Drop? = null
     private var mPlaceholderCheck = System.currentTimeMillis()
     private val mPlaceholderDelay: Long = 200
     private var mDownY = -1
@@ -247,12 +247,12 @@ class DraggableTreeView : FrameLayout {
                     //above so make sibling
                     if (mPlaceholderCheck + mPlaceholderDelay < System.currentTimeMillis()) {
                         var has_changed = false
-                        if (lastNode != null && (drop_item != Drop.above_sibling || lastNode !== nodeOrder[i])
+                        if (lastNode != null && (dropItem != Drop.above_sibling || lastNode !== nodeOrder[i])
                         ) {
                             //Item has changed
                             has_changed = true
                         }
-                        drop_item = Drop.above_sibling
+                        dropItem = Drop.above_sibling
                         lastNode = nodeOrder[i]
                         if (adapter!!.placeholder.parent != null) {
                             (adapter!!.placeholder.parent as ViewGroup).removeView(adapter!!.placeholder)
@@ -274,7 +274,7 @@ class DraggableTreeView : FrameLayout {
                         if (maxLevels != -1 && maxLevels < level) {
                             (lastNode!!.view
                                 .parent as ViewGroup).addView(adapter!!.badPlaceholder, pos)
-                            drop_item = Drop.cancel
+                            dropItem = Drop.cancel
                         } else {
                             if (has_changed) {
                                 if (i <= nodeOrder.indexOf(mobileNode) || lastNode!!.getLevel() > mobileNode!!.getLevel()) {
@@ -303,13 +303,13 @@ class DraggableTreeView : FrameLayout {
                     if (mPlaceholderCheck + mPlaceholderDelay < System.currentTimeMillis()) {
                         var temp_node: TreeNode? = null
                         var has_changed = false
-                        if (lastNode != null && (drop_item != Drop.child || lastNode !== nodeOrder[i])
+                        if (lastNode != null && (dropItem != Drop.child || lastNode !== nodeOrder[i])
                         ) {
                             //Item has changed
                             has_changed = true
                             temp_node = lastNode
                         }
-                        drop_item = Drop.child
+                        dropItem = Drop.child
                         lastNode = nodeOrder[i]
                         if (adapter!!.placeholder.parent != null) {
                             (adapter!!.placeholder.parent as ViewGroup).removeView(adapter!!.placeholder)
@@ -327,7 +327,7 @@ class DraggableTreeView : FrameLayout {
                         val level = mobileNode!!.childLevel + lastNode!!.getLevel() + 1
                         if (maxLevels != -1 && maxLevels < level) {
                             (lastNode!!.view as ViewGroup).addView(adapter!!.badPlaceholder)
-                            drop_item = Drop.cancel
+                            dropItem = Drop.cancel
                         } else {
                             if (has_changed && temp_node != null) {
                                 mDragItemCallback.onChangedPosition(
@@ -345,12 +345,12 @@ class DraggableTreeView : FrameLayout {
                     //below so make sibling
                     if (mPlaceholderCheck + mPlaceholderDelay < System.currentTimeMillis()) {
                         var has_changed = false
-                        if (lastNode != null && (drop_item != Drop.below_sibling || lastNode !== nodeOrder[i])
+                        if (lastNode != null && (dropItem != Drop.below_sibling || lastNode !== nodeOrder[i])
                         ) {
                             //Item has changed
                             has_changed = true
                         }
-                        drop_item = Drop.below_sibling
+                        dropItem = Drop.below_sibling
                         lastNode = nodeOrder[i]
                         if (adapter!!.placeholder.parent != null) {
                             (adapter!!.placeholder.parent as ViewGroup).removeView(adapter!!.placeholder)
@@ -372,7 +372,7 @@ class DraggableTreeView : FrameLayout {
                         if (maxLevels != -1 && maxLevels < level) {
                             (lastNode!!.view
                                 .parent as ViewGroup).addView(adapter!!.badPlaceholder, pos + 1)
-                            drop_item = Drop.cancel
+                            dropItem = Drop.cancel
                         } else {
                             if (has_changed) {
                                 if (i <= nodeOrder.indexOf(mobileNode) || lastNode!!.getLevel() > mobileNode!!.getLevel()) {
@@ -399,12 +399,12 @@ class DraggableTreeView : FrameLayout {
                 } else {
                     if (mPlaceholderCheck + mPlaceholderDelay < System.currentTimeMillis()) {
                         var has_changed = false
-                        if (lastNode != null && (drop_item != Drop.below_sibling || lastNode !== nodeOrder[i])
+                        if (lastNode != null && (dropItem != Drop.below_sibling || lastNode !== nodeOrder[i])
                         ) {
                             //Item has changed
                             has_changed = true
                         }
-                        drop_item = Drop.below_sibling
+                        dropItem = Drop.below_sibling
                         lastNode = nodeOrder[i]
                         if (adapter!!.placeholder.parent != null) {
                             (adapter!!.placeholder.parent as ViewGroup).removeView(adapter!!.placeholder)
@@ -426,7 +426,7 @@ class DraggableTreeView : FrameLayout {
                         if (maxLevels != -1 && maxLevels < level) {
                             (lastNode!!.view
                                 .parent as ViewGroup).addView(adapter!!.badPlaceholder, pos + 1)
-                            drop_item = Drop.cancel
+                            dropItem = Drop.cancel
                         } else {
                             if (has_changed) {
                                 if (i <= nodeOrder.indexOf(mobileNode) || lastNode!!.getLevel() > mobileNode!!.getLevel()) {
@@ -467,8 +467,8 @@ class DraggableTreeView : FrameLayout {
                     (adapter!!.badPlaceholder.parent as ViewGroup).removeView(adapter!!.badPlaceholder)
                 }
                 //Make sure it didn't drop on itself
-                if (lastNode !== mobileNode || drop_item != Drop.cancel) {
-                    if (drop_item == Drop.above_sibling) {
+                if (lastNode !== mobileNode || dropItem != Drop.cancel) {
+                    if (dropItem == Drop.above_sibling) {
                         val pos = lastNode!!.position
                         mobileNode!!.setParent(lastNode!!.parent, pos - 1)
                         mDragItemCallback.onEndDrag(
@@ -477,7 +477,7 @@ class DraggableTreeView : FrameLayout {
                             lastNode,
                             mobileNode!!.position + 1
                         )
-                    } else if (drop_item == Drop.below_sibling) {
+                    } else if (dropItem == Drop.below_sibling) {
                         val pos = lastNode?.position ?: 0
                         //if it came from below we need to add
                         mobileNode!!.setParent(lastNode?.parent, pos)
@@ -487,7 +487,7 @@ class DraggableTreeView : FrameLayout {
                             lastNode,
                             mobileNode!!.position + 1
                         )
-                    } else if (drop_item == Drop.child) {
+                    } else if (dropItem == Drop.child) {
                         mobileNode!!.setParent(lastNode, 0)
                         mDragItemCallback.onEndDrag(
                             mobileNode!!.view,

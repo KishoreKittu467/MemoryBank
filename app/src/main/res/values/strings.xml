@@ -1076,10 +1076,6 @@
         https://github.com/SimpleMobileTools/Simple-Commons/tree/master/commons/src/main/res
     -->
 
-    <!--  Bubble heads -->
-    <string name="animation_type">Animation Type</string>
-    <string name="orientation">Orientation</string>
-
     <!--Calculator-->
     <string name="calc_dialog_clear">Clear</string>
     <string name="calc_dialog_cancel">Cancel</string>

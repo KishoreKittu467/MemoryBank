@@ -7,7 +7,6 @@ import android.content.DialogInterface;
 import android.content.res.Resources;
 import android.content.res.TypedArray;
 import android.graphics.Rect;
-import android.os.Build;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.view.ContextThemeWrapper;
@@ -96,9 +95,7 @@ public class CalcDialog extends AppCompatDialogFragment {
         final View headerElevationBgView = view.findViewById(R.id.calc_view_header_elevation);
         headerBgView.setBackgroundColor(headerColor);
         headerElevationBgView.setBackgroundColor(headerElevationColor);
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            headerElevationBgView.setVisibility(View.GONE);
-        }
+        headerElevationBgView.setVisibility(View.GONE);
 
         // Value and expression views
         valueTxv = view.findViewById(R.id.calc_txv_value);

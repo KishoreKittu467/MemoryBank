@@ -32,7 +32,6 @@ class PaymentUnitTest {
         val personTwo = PersonLite(
             name = "Raj",
             image = Image(Constants.MY_DP_2),
-            isMarked = false,
             directLoan = 50f,
             indirectLoan = -50f
         )

@@ -10,7 +10,7 @@ data class Person(
     @ColumnInfo(name = "phone_numbers") var phoneNumbers: MutableSet<Entity>? = null, // setOf(Entity("Mobile", "+918106644656"), Entity("Home", "8106644656")
     @ColumnInfo(name = "emails") var emails: MutableSet<Entity>? = null, // setOf(Entity("Office", "msk@tw.com"), Entity("Personal", "msk@gm.com")
     @ColumnInfo(name = "dob") var dob: Long = 0,
-    @ColumnInfo(name = "gender") var gender: Constants.GENDER = Constants.GENDER.MALE,
+    @ColumnInfo(name = "gender") var gender: Constants.GENDER = Constants.GENDER.UNKNOWN,
     @ColumnInfo(name = "gallery") var gallery: Set<Image>? = null,
     @ColumnInfo(name = "relation") var relation: Entity? = null,/** Entity("#tagName") */
     @ColumnInfo(name = "is_marked") var isMarked: Boolean = false,
@@ -28,4 +28,3 @@ data class Person(
     @PrimaryKey(autoGenerate = true)
     var id: String = ""
 }
-

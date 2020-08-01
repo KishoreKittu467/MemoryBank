@@ -682,8 +682,8 @@ fun Context.getVideoResolution(path: String): Point? {
     var point = try {
         val retriever = MediaMetadataRetriever()
         retriever.setDataSource(path)
-        val width = retriever.extractMetadata(MediaMetadataRetriever.METADATA_KEY_VIDEO_WIDTH).toInt()
-        val height = retriever.extractMetadata(MediaMetadataRetriever.METADATA_KEY_VIDEO_HEIGHT).toInt()
+        val width = retriever.extractMetadata(MediaMetadataRetriever.METADATA_KEY_VIDEO_WIDTH)?.toInt() ?: 1
+        val height = retriever.extractMetadata(MediaMetadataRetriever.METADATA_KEY_VIDEO_HEIGHT)?.toInt() ?: 1
         Point(width, height)
     } catch (ignored: Exception) {
         null
@@ -694,8 +694,8 @@ fun Context.getVideoResolution(path: String): Point? {
             val fd = contentResolver.openFileDescriptor(Uri.parse(path), "r")?.fileDescriptor
             val retriever = MediaMetadataRetriever()
             retriever.setDataSource(fd)
-            val width = retriever.extractMetadata(MediaMetadataRetriever.METADATA_KEY_VIDEO_WIDTH).toInt()
-            val height = retriever.extractMetadata(MediaMetadataRetriever.METADATA_KEY_VIDEO_HEIGHT).toInt()
+            val width = retriever.extractMetadata(MediaMetadataRetriever.METADATA_KEY_VIDEO_WIDTH)?.toInt() ?: 1
+            val height = retriever.extractMetadata(MediaMetadataRetriever.METADATA_KEY_VIDEO_HEIGHT)?.toInt() ?: 1
             point = Point(width, height)
         } catch (ignored: Exception) {
         }
@@ -726,8 +726,8 @@ fun Context.getDuration(path: String): Int? {
     return try {
         val retriever = MediaMetadataRetriever()
         retriever.setDataSource(path)
-        (retriever.extractMetadata(MediaMetadataRetriever.METADATA_KEY_DURATION)
-            .toInt() / 1000f).roundToInt()
+        val extraMeta = retriever.extractMetadata(MediaMetadataRetriever.METADATA_KEY_DURATION)?.toInt()?:1
+        (extraMeta / 1000f).roundToInt()
     } catch (ignored: Exception) {
         null
     }
@@ -857,7 +857,7 @@ fun Context.getTextSize() = when (baseConfig.fontSize) {
 val Context.telecomManager: TelecomManager get() = getSystemService(Context.TELECOM_SERVICE) as TelecomManager
 val Context.windowManager: WindowManager get() = getSystemService(Context.WINDOW_SERVICE) as WindowManager
 val Context.notificationManager: NotificationManager get() = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
-val Context.shortcutManager: ShortcutManager get() = getSystemService(ShortcutManager::class.java) as ShortcutManager
+//val Context.shortcutManager: ShortcutManager get() = getSystemService(ShortcutManager::class.java) as ShortcutManager
 
 val Context.portrait get() = resources.configuration.orientation == Configuration.ORIENTATION_PORTRAIT
 val Context.navigationBarRight: Boolean get() = usableScreenSize.x < realScreenSize.x

@@ -13,8 +13,7 @@ class TreeNode {
         private set
     var isCollapsed = false
         private set
-    val children =
-        ArrayList<TreeNode>()
+    val children = mutableListOf<TreeNode>()
     var data: Any? = null
         private set
     lateinit var view: View
