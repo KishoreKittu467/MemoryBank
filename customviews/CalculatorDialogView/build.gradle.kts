@@ -2,8 +2,7 @@ plugins {
     id(AppPlugins.library)
     kotlin(AppPlugins.android)
     kotlin(AppPlugins.androidExtensions)
-    kotlin(AppPlugins.kapt)
-}
+    }
 
 android {
     compileSdkVersion(Versions.compileSdkVersion)
@@ -24,6 +23,15 @@ android {
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
         }
     }
+
+    compileOptions {
+        sourceCompatibility = Versions.compileJavaVersion
+        targetCompatibility = Versions.compileJavaVersion
+    }
+
+    kotlinOptions {
+        jvmTarget = Versions.targetJavaVersion
+    }
 }
 
 dependencies {
@@ -31,8 +39,9 @@ dependencies {
     implementation(Deps.stdlib)
     implementation(Deps.coreKTX)
     implementation(Deps.appCompat)
+    implementation(Deps.constraintLayout)
+    implementation(Deps.fragments)
     implementation(Deps.material)
-
     testImplementation(Deps.junit)
     androidTestImplementation(Deps.junitExt)
     androidTestImplementation(Deps.espresso)

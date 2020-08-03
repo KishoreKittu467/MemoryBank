@@ -14,7 +14,9 @@ buildSrc/.gradle
 buildSrc/build
 
 customviews/BubbleHeadsView/build
+customviews/CalculatorDialogView/build
 customviews/PageFlipView/build
 
 demos/BubbleHeadsDemo/build
+demos/CalculatorDialogDemo/build
 demos/PageFlipDemo/build

@@ -1,4 +1,4 @@
-package com.kkapps.memorybank.calculator
+package com.kkapps.calculator
 
 import android.content.Context
 import android.os.Bundle
@@ -10,13 +10,11 @@ import androidx.annotation.ArrayRes
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.widget.doAfterTextChanged
 import androidx.fragment.app.Fragment
-import com.kkapps.memorybank.R
 import kotlinx.android.synthetic.main.fragment_calc_settings.*
 import java.math.BigDecimal
 import java.text.NumberFormat
 
 class CalcSettingsFragment : Fragment(), CalcDialog.CalcDialogCallback {
-
 
     private var value: BigDecimal? = null
     private var nbFmt = NumberFormat.getInstance()
@@ -36,20 +34,16 @@ class CalcSettingsFragment : Fragment(), CalcDialog.CalcDialogCallback {
         }
 
         // Min value
-        val minValChk: CheckBox = min_value_chk
-        val minValueInput: EditText = min_value_input
-        minValChk.setOnCheckedChangeListener { _, isChecked ->
-            minValueInput.isEnabled = isChecked
+        min_value_chk.setOnCheckedChangeListener { _, isChecked ->
+            min_value_input.isEnabled = isChecked
         }
-        minValueInput.isEnabled = minValChk.isChecked
+        min_value_input.isEnabled = min_value_chk.isChecked
 
         // Max value
-        val maxValChk = max_value_chk
-        val maxValInput: EditText = max_value_input
-        maxValChk.setOnCheckedChangeListener { _, isChecked ->
-            maxValInput.isEnabled = isChecked
+        max_value_chk.setOnCheckedChangeListener { _, isChecked ->
+            max_value_input.isEnabled = isChecked
         }
-        maxValInput.isEnabled = maxValChk.isChecked
+        max_value_input.isEnabled = max_value_chk.isChecked
 
         // Numpad layout
         var numpadLayout = CalcNumpadLayout.CALCULATOR
@@ -72,28 +66,24 @@ class CalcSettingsFragment : Fragment(), CalcDialog.CalcDialogCallback {
         }
 
         // Max integer digits
-        val maxIntDigitsChk: CheckBox = max_int_digits_chk
-        val maxIntDigitsInput: EditText = max_int_digits_input
-        maxIntDigitsChk.setOnCheckedChangeListener { _, isChecked ->
-            maxIntDigitsInput.isEnabled = isChecked
+        max_int_digits_chk.setOnCheckedChangeListener { _, isChecked ->
+            max_int_digits_input.isEnabled = isChecked
             updateNumberFormat()
         }
-        maxIntDigitsInput.doAfterTextChanged {
+        max_int_digits_input.doAfterTextChanged {
             updateNumberFormat()
         }
-        maxIntDigitsInput.isEnabled = maxIntDigitsChk.isChecked
+        max_int_digits_input.isEnabled = max_int_digits_chk.isChecked
 
         // Max fractional digits
-        val maxFracDigitsChk = max_frac_digits_chk
-        val maxFracDigitsInput: EditText = max_frac_digits_input
-        maxFracDigitsChk.setOnCheckedChangeListener { _, isChecked ->
-            maxFracDigitsInput.isEnabled = isChecked
+        max_frac_digits_chk.setOnCheckedChangeListener { _, isChecked ->
+            max_frac_digits_input.isEnabled = isChecked
             updateNumberFormat()
         }
-        maxFracDigitsInput.doAfterTextChanged {
+        max_frac_digits_input.doAfterTextChanged {
             updateNumberFormat()
         }
-        maxFracDigitsInput.isEnabled = maxFracDigitsChk.isChecked
+        max_frac_digits_input.isEnabled = max_frac_digits_chk.isChecked
 
         // Open dialog click listener
         val openDialogClickListener = View.OnClickListener {
@@ -103,24 +93,24 @@ class CalcSettingsFragment : Fragment(), CalcDialog.CalcDialogCallback {
             }
 
             // Get settings from views
-            val minValue = if (minValChk.isChecked && minValueInput.length() > 0) {
-                BigDecimal(minValueInput.text.toString())
+            val minValue = if (min_value_chk.isChecked && min_value_input.length() > 0) {
+                BigDecimal(min_value_input.text.toString())
             } else {
                 null
             }
-            var maxValue = if (maxValChk.isChecked && maxValInput.length() > 0) {
-                BigDecimal(maxValInput.text.toString())
+            var maxValue = if (max_value_chk.isChecked && max_value_input.length() > 0) {
+                BigDecimal(max_value_input.text.toString())
             } else {
                 null
             }
             if (minValue != null && maxValue != null && minValue > maxValue) {
                 // Min can't be greater than max, disable max value.
-                maxValChk.isChecked = false
+                max_value_chk.isChecked = false
                 maxValue = null
             }
 
             // Update dialog settings
-            calcDialog.settings.let {
+            calcDialog.settings?.let {
                 it.initialValue = value
                 it.isExpressionShown = show_expr_chk.isChecked
                 it.isExpressionEditable = expr_editable_chk.isChecked
@@ -143,10 +133,10 @@ class CalcSettingsFragment : Fragment(), CalcDialog.CalcDialogCallback {
 
         if (state == null) {
             // Set initial state
-            minValueInput.setText(BigDecimal("-1E10").toPlainString())
-            maxValInput.setText(BigDecimal("1E10").toPlainString())
-            maxIntDigitsInput.setText(10.toString())
-            maxFracDigitsInput.setText(8.toString())
+            min_value_input.setText(BigDecimal("-1E10").toPlainString())
+            max_value_input.setText(BigDecimal("1E10").toPlainString())
+            max_int_digits_input.setText(10.toString())
+            max_frac_digits_input.setText(8.toString())
             numpad_layout_dropdown.setSelection(0)
             nbfmt_dropdown.setSelection(0)
             updateNumberFormat()

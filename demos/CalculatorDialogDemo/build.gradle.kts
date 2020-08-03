@@ -1,8 +1,7 @@
 plugins {
-    id(AppPlugins.library)
+    id(AppPlugins.application)
     kotlin(AppPlugins.android)
     kotlin(AppPlugins.androidExtensions)
-    kotlin(AppPlugins.kapt)
 }
 
 android {
@@ -10,6 +9,7 @@ android {
     buildToolsVersion = Versions.buildToolsVersion
 
     defaultConfig {
+        applicationId = "com.kkapps.calculatordialogdemo"
         minSdkVersion(Versions.minSdkVersion)
         targetSdkVersion(Versions.targetSdkVersion)
         versionCode = 1
@@ -27,13 +27,8 @@ android {
 }
 
 dependencies {
-    implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
-    implementation(Deps.stdlib)
-    implementation(Deps.coreKTX)
+    implementation(project(CustomView.CALC_DIALOG))
     implementation(Deps.appCompat)
+    implementation(Deps.constraintLayout)
     implementation(Deps.material)
-
-    testImplementation(Deps.junit)
-    androidTestImplementation(Deps.junitExt)
-    androidTestImplementation(Deps.espresso)
 }

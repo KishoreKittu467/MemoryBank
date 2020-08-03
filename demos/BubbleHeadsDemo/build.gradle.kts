@@ -1,18 +1,18 @@
 plugins {
-    id(AppConfig.AppPlugins.application)
-    kotlin(AppConfig.AppPlugins.android)
-    kotlin(AppConfig.AppPlugins.androidExtensions)
-    kotlin(AppConfig.AppPlugins.kapt)
+    id(AppPlugins.application)
+    kotlin(AppPlugins.android)
+    kotlin(AppPlugins.androidExtensions)
+    kotlin(AppPlugins.kapt)
 }
 
 android {
-    compileSdkVersion(AppConfig.Versions.compileSdkVersion)
-    buildToolsVersion = AppConfig.Versions.buildToolsVersion
+    compileSdkVersion(Versions.compileSdkVersion)
+    buildToolsVersion = Versions.buildToolsVersion
 
     defaultConfig {
         applicationId = "com.kkapps.bubbleheadsdemo"
-        minSdkVersion(AppConfig.Versions.minSdkVersion)
-        targetSdkVersion(AppConfig.Versions.targetSdkVersion)
+        minSdkVersion(Versions.minSdkVersion)
+        targetSdkVersion(Versions.targetSdkVersion)
         versionCode = 1
         versionName = "1.0"
 

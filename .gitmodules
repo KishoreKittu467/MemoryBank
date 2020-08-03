@@ -1,0 +1,3 @@
+[submodule "customviews/StickyTimeLine"]
+	path = customviews/StickyTimeLine
+	url = https://github.com/sangcomz/StickyTimeLine.git

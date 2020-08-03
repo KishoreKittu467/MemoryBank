@@ -27,11 +27,13 @@ private object Constants {
 
     val allCustomViews =  listOf(
         ":BubbleHeadsView",
+        ":CalculatorDialogView",
         ":PageFlipView"
     )
 
     val allDemoApps = listOf(
         ":BubbleHeadsDemo",
+        ":CalculatorDialogDemo",
         ":PageFlipDemo"
     )
 }

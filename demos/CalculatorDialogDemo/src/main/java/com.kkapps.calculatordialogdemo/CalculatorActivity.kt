@@ -1,8 +1,7 @@
-package com.kkapps.memorybank.demos.calculator
+package com.kkapps.calculatordialogdemo
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.kkapps.memorybank.R
 
 class CalculatorActivity : AppCompatActivity() {
 

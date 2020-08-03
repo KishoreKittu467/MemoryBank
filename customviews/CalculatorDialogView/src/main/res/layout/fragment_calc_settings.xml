@@ -5,8 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:theme="@style/Theme.MaterialComponents.DayNight.Bridge"
-    tools:context=".demos.calculator.CalculatorActivity">
+    android:theme="@style/Theme.MaterialComponents.DayNight.Bridge">
 
     <androidx.core.widget.NestedScrollView
         android:id="@+id/scroll_view"

@@ -184,8 +184,7 @@
         </activity>
         <activity android:name=".demos.draggabletree.DraggableTreeActivity">
         </activity>
-        <activity android:name=".demos.calculator.CalculatorActivity">
-        </activity>
+
         <receiver
             android:name=".calendar.helpers.MyWidgetMonthlyProvider"
             android:icon="@drawable/img_widget_monthly_preview"

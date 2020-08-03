@@ -8,8 +8,7 @@
     android:background="?calcBackgroundColor"
     android:layoutDirection="ltr"
     tools:ignore="UnusedAttribute"
-    tools:theme="@style/CalcDialogStyle"
-    >
+    tools:theme="@style/CalcDialogStyle">
 
     <View
         android:id="@+id/calc_view_header_background"
@@ -20,10 +19,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:background="?calcHeaderColor"
-        />
+        tools:background="?calcHeaderColor" />
 
-    <!-- This view is only shown on API < 21 to support header "elevation". -->
     <View
         android:id="@+id/calc_view_header_elevation"
         android:layout_width="0dp"
@@ -68,7 +65,7 @@
         tools:text="-1,211.52"
         />
 
-    <com.kkapps.memorybank.calculator.CalcEraseButton
+    <com.kkapps.calculator.CalcEraseButton
         android:id="@+id/calc_btn_erase"
         style="?calcEraseBtnStyle"
         android:layout_width="wrap_content"
