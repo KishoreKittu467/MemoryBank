@@ -6,8 +6,8 @@ import com.kkapps.memorybank.calendar.extensions.config
 import com.kkapps.memorybank.calendar.extensions.eventsDB
 import com.kkapps.memorybank.calendar.extensions.rescheduleReminder
 import com.kkapps.memorybank.calendar.helpers.EVENT_ID
-import com.kkapps.memorybank.commons.extensions.showPickSecondsDialogHelper
-import com.kkapps.memorybank.commons.helpers.ensureBackgroundThread
+import com.kkapps.commons.extensions.showPickSecondsDialogHelper
+import com.kkapps.commons.helpers.ensureBackgroundThread
 
 class SnoozeReminderActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -11,10 +11,10 @@ import com.kkapps.memorybank.calendar.extensions.config
 import com.kkapps.memorybank.calendar.helpers.Formatter
 import com.kkapps.memorybank.calendar.helpers.LOW_ALPHA
 import com.kkapps.memorybank.calendar.helpers.MyWidgetDateProvider
-import com.kkapps.memorybank.commons.dialogs.ColorPickerDialog
-import com.kkapps.memorybank.commons.extensions.adjustAlpha
-import com.kkapps.memorybank.commons.extensions.applyColorFilter
-import com.kkapps.memorybank.commons.extensions.setFillWithStroke
+import com.kkapps.commons.dialogs.ColorPickerDialog
+import com.kkapps.commons.extensions.adjustAlpha
+import com.kkapps.commons.extensions.applyColorFilter
+import com.kkapps.commons.extensions.setFillWithStroke
 import kotlinx.android.synthetic.main.widget_config_date.*
 
 class WidgetDateConfigureActivity : SimpleActivity() {

@@ -9,9 +9,9 @@ import com.kkapps.memorybank.R
 import com.kkapps.memorybank.calendar.extensions.calDAVHelper
 import com.kkapps.memorybank.calendar.extensions.config
 import com.kkapps.memorybank.calendar.models.EventType
-import com.kkapps.memorybank.commons.dialogs.ColorPickerDialog
-import com.kkapps.memorybank.commons.extensions.setFillWithStroke
-import com.kkapps.memorybank.commons.extensions.setupDialogStuff
+import com.kkapps.commons.dialogs.ColorPickerDialog
+import com.kkapps.commons.extensions.setFillWithStroke
+import com.kkapps.commons.extensions.setupDialogStuff
 import kotlinx.android.synthetic.main.dialog_select_event_type_color.view.*
 import kotlinx.android.synthetic.main.radio_button_with_color.view.*
 

@@ -10,10 +10,10 @@ import com.kkapps.memorybank.calendar.extensions.eventsHelper
 import com.kkapps.memorybank.calendar.helpers.IcsImporter
 import com.kkapps.memorybank.calendar.helpers.IcsImporter.ImportResult.*
 import com.kkapps.memorybank.calendar.helpers.REGULAR_EVENT_TYPE_ID
-import com.kkapps.memorybank.commons.extensions.setFillWithStroke
-import com.kkapps.memorybank.commons.extensions.setupDialogStuff
-import com.kkapps.memorybank.commons.extensions.toast
-import com.kkapps.memorybank.commons.helpers.ensureBackgroundThread
+import com.kkapps.commons.extensions.setFillWithStroke
+import com.kkapps.commons.extensions.setupDialogStuff
+import com.kkapps.commons.extensions.toast
+import com.kkapps.commons.helpers.ensureBackgroundThread
 import kotlinx.android.synthetic.main.dialog_import_events.view.*
 
 class ImportEventsDialog(val activity: SimpleActivity, val path: String, val callback: (refreshView: Boolean) -> Unit) {

@@ -13,6 +13,9 @@ keystore.properties
 buildSrc/.gradle
 buildSrc/build
 
+app/build
+customlibs/Commons/build
+
 customviews/BubbleHeadsView/build
 customviews/CalculatorDialogView/build
 customviews/PageFlipView/build

@@ -6,7 +6,7 @@ import android.content.Intent
 import com.kkapps.memorybank.calendar.extensions.notifyRunningEvents
 import com.kkapps.memorybank.calendar.extensions.recheckCalDAVCalendars
 import com.kkapps.memorybank.calendar.extensions.scheduleAllEvents
-import com.kkapps.memorybank.commons.helpers.ensureBackgroundThread
+import com.kkapps.commons.helpers.ensureBackgroundThread
 
 class BootCompletedReceiver : BroadcastReceiver() {
 

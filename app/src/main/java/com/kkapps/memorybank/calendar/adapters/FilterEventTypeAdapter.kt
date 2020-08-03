@@ -7,8 +7,8 @@ import com.kkapps.memorybank.R
 import com.kkapps.memorybank.calendar.activities.SimpleActivity
 import com.kkapps.memorybank.calendar.extensions.config
 import com.kkapps.memorybank.calendar.models.EventType
-import com.kkapps.memorybank.commons.extensions.getAdjustedPrimaryColor
-import com.kkapps.memorybank.commons.extensions.setFillWithStroke
+import com.kkapps.commons.extensions.getAdjustedPrimaryColor
+import com.kkapps.commons.extensions.setFillWithStroke
 import kotlinx.android.synthetic.main.filter_event_type_view.view.*
 import java.util.*
 

@@ -16,8 +16,8 @@ import com.kkapps.memorybank.calendar.helpers.YearlyCalendarImpl
 import com.kkapps.memorybank.calendar.interfaces.YearlyCalendar
 import com.kkapps.memorybank.calendar.models.DayYearly
 import com.kkapps.memorybank.calendar.views.SmallMonthView
-import com.kkapps.memorybank.commons.extensions.getAdjustedPrimaryColor
-import com.kkapps.memorybank.commons.extensions.updateTextColors
+import com.kkapps.commons.extensions.getAdjustedPrimaryColor
+import com.kkapps.commons.extensions.updateTextColors
 import kotlinx.android.synthetic.main.fragment_year.view.*
 import org.joda.time.DateTime
 import java.util.*

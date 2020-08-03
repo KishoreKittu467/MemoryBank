@@ -4,11 +4,11 @@ import android.content.Context
 import android.media.AudioManager
 import com.kkapps.memorybank.calendar.extensions.config
 import com.kkapps.memorybank.calendar.extensions.scheduleCalDAVSync
-import com.kkapps.memorybank.commons.extensions.getDefaultAlarmTitle
-import com.kkapps.memorybank.commons.extensions.getDefaultAlarmUri
-import com.kkapps.memorybank.commons.helpers.ALARM_SOUND_TYPE_NOTIFICATION
-import com.kkapps.memorybank.commons.helpers.BaseConfig
-import com.kkapps.memorybank.commons.helpers.DAY_MINUTES
+import com.kkapps.commons.extensions.getDefaultAlarmTitle
+import com.kkapps.commons.extensions.getDefaultAlarmUri
+import com.kkapps.commons.helpers.ALARM_SOUND_TYPE_NOTIFICATION
+import com.kkapps.commons.helpers.BaseConfig
+import com.kkapps.commons.helpers.DAY_MINUTES
 import java.util.*
 
 class Config(context: Context) : BaseConfig(context) {

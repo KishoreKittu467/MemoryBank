@@ -1,8 +1,8 @@
 package com.kkapps.memorybank.home.models
 
 import androidx.room.ColumnInfo
-import com.kkapps.memorybank.commons.utils.Constants
-import com.kkapps.memorybank.commons.utils.Constants.Field
+import com.kkapps.memorybank.home.utils.Constants
+import com.kkapps.memorybank.home.utils.Constants.Field
 
 data class FieldType(
     @ColumnInfo(name = "field") var field: String = Constants.EVENT_PMNT,

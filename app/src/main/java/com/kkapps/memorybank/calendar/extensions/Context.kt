@@ -32,8 +32,8 @@ import com.kkapps.memorybank.calendar.models.*
 import com.kkapps.memorybank.calendar.receivers.CalDAVSyncReceiver
 import com.kkapps.memorybank.calendar.receivers.NotificationReceiver
 import com.kkapps.memorybank.calendar.services.SnoozeService
-import com.kkapps.memorybank.commons.extensions.*
-import com.kkapps.memorybank.commons.helpers.*
+import com.kkapps.commons.extensions.*
+import com.kkapps.commons.helpers.*
 import org.joda.time.DateTime
 import org.joda.time.DateTimeZone
 import org.joda.time.LocalDate

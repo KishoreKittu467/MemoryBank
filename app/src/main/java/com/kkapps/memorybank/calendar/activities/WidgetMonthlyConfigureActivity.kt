@@ -18,11 +18,11 @@ import com.kkapps.memorybank.calendar.helpers.MonthlyCalendarImpl
 import com.kkapps.memorybank.calendar.helpers.MyWidgetMonthlyProvider
 import com.kkapps.memorybank.calendar.interfaces.MonthlyCalendar
 import com.kkapps.memorybank.calendar.models.DayMonthly
-import com.kkapps.memorybank.commons.dialogs.ColorPickerDialog
-import com.kkapps.memorybank.commons.extensions.adjustAlpha
-import com.kkapps.memorybank.commons.extensions.applyColorFilter
-import com.kkapps.memorybank.commons.extensions.beVisible
-import com.kkapps.memorybank.commons.extensions.setFillWithStroke
+import com.kkapps.commons.dialogs.ColorPickerDialog
+import com.kkapps.commons.extensions.adjustAlpha
+import com.kkapps.commons.extensions.applyColorFilter
+import com.kkapps.commons.extensions.beVisible
+import com.kkapps.commons.extensions.setFillWithStroke
 import kotlinx.android.synthetic.main.first_row.*
 import kotlinx.android.synthetic.main.top_navigation.*
 import kotlinx.android.synthetic.main.widget_config_monthly.*

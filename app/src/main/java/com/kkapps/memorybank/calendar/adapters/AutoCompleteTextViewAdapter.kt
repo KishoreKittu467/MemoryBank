@@ -9,8 +9,8 @@ import android.widget.Filter
 import com.kkapps.memorybank.R
 import com.kkapps.memorybank.calendar.activities.SimpleActivity
 import com.kkapps.memorybank.calendar.models.Attendee
-import com.kkapps.memorybank.commons.extensions.normalizeString
-import com.kkapps.memorybank.commons.helpers.SimpleContactsHelper
+import com.kkapps.commons.extensions.normalizeString
+import com.kkapps.commons.helpers.SimpleContactsHelper
 import kotlinx.android.synthetic.main.item_autocomplete_email_name.view.*
 
 class AutoCompleteTextViewAdapter(val activity: SimpleActivity, val contacts: ArrayList<Attendee>) : ArrayAdapter<Attendee>(activity, 0, contacts) {

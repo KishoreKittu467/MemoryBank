@@ -7,7 +7,7 @@ import androidx.room.Index
 import androidx.room.PrimaryKey
 import com.kkapps.memorybank.calendar.extensions.seconds
 import com.kkapps.memorybank.calendar.helpers.*
-import com.kkapps.memorybank.commons.extensions.addBitIf
+import com.kkapps.commons.extensions.addBitIf
 import org.joda.time.DateTime
 import org.joda.time.DateTimeZone
 import java.io.Serializable

@@ -20,11 +20,11 @@ import com.kkapps.memorybank.calendar.models.Event
 import com.kkapps.memorybank.calendar.models.ListEvent
 import com.kkapps.memorybank.calendar.models.ListItem
 import com.kkapps.memorybank.calendar.models.ListSection
-import com.kkapps.memorybank.commons.extensions.*
-import com.kkapps.memorybank.commons.helpers.MONTH_SECONDS
-import com.kkapps.memorybank.commons.interfaces.RefreshRecyclerViewListener
-import com.kkapps.memorybank.commons.views.MyLinearLayoutManager
-import com.kkapps.memorybank.commons.views.MyRecyclerView
+import com.kkapps.commons.extensions.*
+import com.kkapps.commons.helpers.MONTH_SECONDS
+import com.kkapps.commons.interfaces.RefreshRecyclerViewListener
+import com.kkapps.commons.views.MyLinearLayoutManager
+import com.kkapps.commons.views.MyRecyclerView
 import kotlinx.android.synthetic.main.fragment_event_list.view.*
 import org.joda.time.DateTime
 import java.util.*

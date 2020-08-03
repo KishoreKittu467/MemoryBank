@@ -18,7 +18,7 @@ import com.kkapps.memorybank.calendar.helpers.MonthlyCalendarImpl
 import com.kkapps.memorybank.calendar.interfaces.MonthlyCalendar
 import com.kkapps.memorybank.calendar.interfaces.NavigationListener
 import com.kkapps.memorybank.calendar.models.DayMonthly
-import com.kkapps.memorybank.commons.extensions.applyColorFilter
+import com.kkapps.commons.extensions.applyColorFilter
 import kotlinx.android.synthetic.main.fragment_month.view.*
 import kotlinx.android.synthetic.main.top_navigation.view.*
 import org.joda.time.DateTime

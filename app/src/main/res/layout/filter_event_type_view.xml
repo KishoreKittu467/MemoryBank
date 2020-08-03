@@ -7,7 +7,7 @@
     android:background="?attr/selectableItemBackground"
     android:padding="@dimen/normal_margin">
 
-    <com.kkapps.memorybank.commons.views.MyAppCompatCheckbox
+    <com.kkapps.commons.views.MyAppCompatCheckbox
         android:id="@+id/filter_event_type_checkbox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

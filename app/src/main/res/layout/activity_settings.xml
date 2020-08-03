@@ -22,7 +22,7 @@
             android:paddingEnd="@dimen/normal_margin"
             android:paddingBottom="@dimen/activity_margin">
 
-            <com.kkapps.memorybank.commons.views.MyTextView
+            <com.kkapps.commons.views.MyTextView
                 android:id="@+id/settings_customize_colors_label"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -43,7 +43,7 @@
             android:paddingEnd="@dimen/normal_margin"
             android:paddingBottom="@dimen/activity_margin">
 
-            <com.kkapps.memorybank.commons.views.MyTextView
+            <com.kkapps.commons.views.MyTextView
                 android:id="@+id/settings_manage_event_types_label"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -64,7 +64,7 @@
             android:paddingEnd="@dimen/normal_margin"
             android:paddingBottom="@dimen/activity_margin">
 
-            <com.kkapps.memorybank.commons.views.MySwitchCompat
+            <com.kkapps.commons.views.MySwitchCompat
                 android:id="@+id/settings_use_english"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -86,7 +86,7 @@
             android:paddingEnd="@dimen/normal_margin"
             android:paddingBottom="@dimen/activity_margin">
 
-            <com.kkapps.memorybank.commons.views.MySwitchCompat
+            <com.kkapps.commons.views.MySwitchCompat
                 android:id="@+id/settings_hour_format"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -108,7 +108,7 @@
             android:paddingEnd="@dimen/normal_margin"
             android:paddingBottom="@dimen/activity_margin">
 
-            <com.kkapps.memorybank.commons.views.MySwitchCompat
+            <com.kkapps.commons.views.MySwitchCompat
                 android:id="@+id/settings_sunday_first"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -119,7 +119,7 @@
 
         </RelativeLayout>
 
-        <com.kkapps.memorybank.commons.views.MyTextView
+        <com.kkapps.commons.views.MyTextView
             android:id="@+id/reminders_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -140,7 +140,7 @@
             android:paddingEnd="@dimen/normal_margin"
             android:paddingBottom="@dimen/activity_margin">
 
-            <com.kkapps.memorybank.commons.views.MySwitchCompat
+            <com.kkapps.commons.views.MySwitchCompat
                 android:id="@+id/settings_vibrate"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -162,7 +162,7 @@
             android:paddingEnd="@dimen/normal_margin"
             android:paddingBottom="@dimen/activity_margin">
 
-            <com.kkapps.memorybank.commons.views.MySwitchCompat
+            <com.kkapps.commons.views.MySwitchCompat
                 android:id="@+id/settings_loop_reminders"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -184,7 +184,7 @@
             android:paddingEnd="@dimen/normal_margin"
             android:paddingBottom="@dimen/bigger_margin">
 
-            <com.kkapps.memorybank.commons.views.MyTextView
+            <com.kkapps.commons.views.MyTextView
                 android:id="@+id/settings_reminder_sound_label"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -193,7 +193,7 @@
                 android:paddingEnd="@dimen/medium_margin"
                 android:text="@string/reminder_sound" />
 
-            <com.kkapps.memorybank.commons.views.MyTextView
+            <com.kkapps.commons.views.MyTextView
                 android:id="@+id/settings_reminder_sound"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -219,7 +219,7 @@
             android:paddingEnd="@dimen/normal_margin"
             android:paddingBottom="@dimen/bigger_margin">
 
-            <com.kkapps.memorybank.commons.views.MyTextView
+            <com.kkapps.commons.views.MyTextView
                 android:id="@+id/settings_reminder_audio_stream_label"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -229,7 +229,7 @@
                 android:paddingEnd="@dimen/medium_margin"
                 android:text="@string/reminder_stream" />
 
-            <com.kkapps.memorybank.commons.views.MyTextView
+            <com.kkapps.commons.views.MyTextView
                 android:id="@+id/settings_reminder_audio_stream"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -251,7 +251,7 @@
             android:paddingEnd="@dimen/normal_margin"
             android:paddingBottom="@dimen/activity_margin">
 
-            <com.kkapps.memorybank.commons.views.MySwitchCompat
+            <com.kkapps.commons.views.MySwitchCompat
                 android:id="@+id/settings_use_same_snooze"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -273,7 +273,7 @@
             android:paddingEnd="@dimen/normal_margin"
             android:paddingBottom="@dimen/bigger_margin">
 
-            <com.kkapps.memorybank.commons.views.MyTextView
+            <com.kkapps.commons.views.MyTextView
                 android:id="@+id/settings_snooze_time_label"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -283,7 +283,7 @@
                 android:paddingEnd="@dimen/medium_margin"
                 android:text="@string/snooze_time" />
 
-            <com.kkapps.memorybank.commons.views.MyTextView
+            <com.kkapps.commons.views.MyTextView
                 android:id="@+id/settings_snooze_time"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -294,7 +294,7 @@
 
         </RelativeLayout>
 
-        <com.kkapps.memorybank.commons.views.MyTextView
+        <com.kkapps.commons.views.MyTextView
             android:id="@+id/caldav_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -315,7 +315,7 @@
             android:paddingEnd="@dimen/normal_margin"
             android:paddingBottom="@dimen/activity_margin">
 
-            <com.kkapps.memorybank.commons.views.MySwitchCompat
+            <com.kkapps.commons.views.MySwitchCompat
                 android:id="@+id/settings_caldav_sync"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -337,7 +337,7 @@
             android:paddingEnd="@dimen/normal_margin"
             android:paddingBottom="@dimen/activity_margin">
 
-            <com.kkapps.memorybank.commons.views.MySwitchCompat
+            <com.kkapps.commons.views.MySwitchCompat
                 android:id="@+id/settings_caldav_pull_to_refresh"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -359,7 +359,7 @@
             android:paddingBottom="@dimen/bigger_margin"
             android:visibility="gone">
 
-            <com.kkapps.memorybank.commons.views.MyTextView
+            <com.kkapps.commons.views.MyTextView
                 android:id="@+id/settings_manage_synced_calendars"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -370,7 +370,7 @@
 
         </RelativeLayout>
 
-        <com.kkapps.memorybank.commons.views.MyTextView
+        <com.kkapps.commons.views.MyTextView
             android:id="@+id/new_events_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -390,7 +390,7 @@
             android:paddingEnd="@dimen/normal_margin"
             android:paddingBottom="@dimen/bigger_margin">
 
-            <com.kkapps.memorybank.commons.views.MyTextView
+            <com.kkapps.commons.views.MyTextView
                 android:id="@+id/settings_default_start_time_label"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -400,7 +400,7 @@
                 android:paddingEnd="@dimen/medium_margin"
                 android:text="@string/default_start_time" />
 
-            <com.kkapps.memorybank.commons.views.MyTextView
+            <com.kkapps.commons.views.MyTextView
                 android:id="@+id/settings_default_start_time"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -422,7 +422,7 @@
             android:paddingEnd="@dimen/normal_margin"
             android:paddingBottom="@dimen/bigger_margin">
 
-            <com.kkapps.memorybank.commons.views.MyTextView
+            <com.kkapps.commons.views.MyTextView
                 android:id="@+id/settings_default_duration_label"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -432,7 +432,7 @@
                 android:paddingEnd="@dimen/medium_margin"
                 android:text="@string/default_duration" />
 
-            <com.kkapps.memorybank.commons.views.MyTextView
+            <com.kkapps.commons.views.MyTextView
                 android:id="@+id/settings_default_duration"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -454,7 +454,7 @@
             android:paddingEnd="@dimen/normal_margin"
             android:paddingBottom="@dimen/bigger_margin">
 
-            <com.kkapps.memorybank.commons.views.MyTextView
+            <com.kkapps.commons.views.MyTextView
                 android:id="@+id/settings_default_event_type_label"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -464,7 +464,7 @@
                 android:paddingEnd="@dimen/medium_margin"
                 android:text="@string/default_event_type" />
 
-            <com.kkapps.memorybank.commons.views.MyTextView
+            <com.kkapps.commons.views.MyTextView
                 android:id="@+id/settings_default_event_type"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -487,7 +487,7 @@
             android:paddingEnd="@dimen/normal_margin"
             android:paddingBottom="@dimen/activity_margin">
 
-            <com.kkapps.memorybank.commons.views.MySwitchCompat
+            <com.kkapps.commons.views.MySwitchCompat
                 android:id="@+id/settings_use_last_event_reminders"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -509,7 +509,7 @@
             android:paddingEnd="@dimen/normal_margin"
             android:paddingBottom="@dimen/bigger_margin">
 
-            <com.kkapps.memorybank.commons.views.MyTextView
+            <com.kkapps.commons.views.MyTextView
                 android:id="@+id/settings_default_reminder_1_label"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -519,7 +519,7 @@
                 android:paddingEnd="@dimen/medium_margin"
                 android:text="@string/default_reminder_1" />
 
-            <com.kkapps.memorybank.commons.views.MyTextView
+            <com.kkapps.commons.views.MyTextView
                 android:id="@+id/settings_default_reminder_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -541,7 +541,7 @@
             android:paddingEnd="@dimen/normal_margin"
             android:paddingBottom="@dimen/bigger_margin">
 
-            <com.kkapps.memorybank.commons.views.MyTextView
+            <com.kkapps.commons.views.MyTextView
                 android:id="@+id/settings_default_reminder_2_label"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -551,7 +551,7 @@
                 android:paddingEnd="@dimen/medium_margin"
                 android:text="@string/default_reminder_2" />
 
-            <com.kkapps.memorybank.commons.views.MyTextView
+            <com.kkapps.commons.views.MyTextView
                 android:id="@+id/settings_default_reminder_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -573,7 +573,7 @@
             android:paddingEnd="@dimen/normal_margin"
             android:paddingBottom="@dimen/bigger_margin">
 
-            <com.kkapps.memorybank.commons.views.MyTextView
+            <com.kkapps.commons.views.MyTextView
                 android:id="@+id/settings_default_reminder_3_label"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -583,7 +583,7 @@
                 android:paddingEnd="@dimen/medium_margin"
                 android:text="@string/default_reminder_3" />
 
-            <com.kkapps.memorybank.commons.views.MyTextView
+            <com.kkapps.commons.views.MyTextView
                 android:id="@+id/settings_default_reminder_3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -594,7 +594,7 @@
 
         </RelativeLayout>
 
-        <com.kkapps.memorybank.commons.views.MyTextView
+        <com.kkapps.commons.views.MyTextView
             android:id="@+id/weekly_view_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -615,7 +615,7 @@
             android:paddingEnd="@dimen/normal_margin"
             android:paddingBottom="@dimen/bigger_margin">
 
-            <com.kkapps.memorybank.commons.views.MyTextView
+            <com.kkapps.commons.views.MyTextView
                 android:id="@+id/settings_start_weekly_at_label"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -625,7 +625,7 @@
                 android:paddingEnd="@dimen/medium_margin"
                 android:text="@string/start_day_at" />
 
-            <com.kkapps.memorybank.commons.views.MyTextView
+            <com.kkapps.commons.views.MyTextView
                 android:id="@+id/settings_start_weekly_at"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -636,7 +636,7 @@
 
         </RelativeLayout>
 
-        <com.kkapps.memorybank.commons.views.MyTextView
+        <com.kkapps.commons.views.MyTextView
             android:id="@+id/monthly_view_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -657,7 +657,7 @@
             android:paddingEnd="@dimen/normal_margin"
             android:paddingBottom="@dimen/activity_margin">
 
-            <com.kkapps.memorybank.commons.views.MySwitchCompat
+            <com.kkapps.commons.views.MySwitchCompat
                 android:id="@+id/settings_week_numbers"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -678,7 +678,7 @@
             android:paddingEnd="@dimen/normal_margin"
             android:paddingBottom="@dimen/activity_margin">
 
-            <com.kkapps.memorybank.commons.views.MySwitchCompat
+            <com.kkapps.commons.views.MySwitchCompat
                 android:id="@+id/settings_show_grid"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -689,7 +689,7 @@
 
         </RelativeLayout>
 
-        <com.kkapps.memorybank.commons.views.MyTextView
+        <com.kkapps.commons.views.MyTextView
             android:id="@+id/simple_event_list_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -710,7 +710,7 @@
             android:paddingEnd="@dimen/normal_margin"
             android:paddingBottom="@dimen/activity_margin">
 
-            <com.kkapps.memorybank.commons.views.MySwitchCompat
+            <com.kkapps.commons.views.MySwitchCompat
                 android:id="@+id/settings_replace_description"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -731,7 +731,7 @@
             android:paddingEnd="@dimen/normal_margin"
             android:paddingBottom="@dimen/bigger_margin">
 
-            <com.kkapps.memorybank.commons.views.MyTextView
+            <com.kkapps.commons.views.MyTextView
                 android:id="@+id/settings_display_past_events_label"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -741,7 +741,7 @@
                 android:paddingEnd="@dimen/medium_margin"
                 android:text="@string/display_past_events" />
 
-            <com.kkapps.memorybank.commons.views.MyTextView
+            <com.kkapps.commons.views.MyTextView
                 android:id="@+id/settings_display_past_events"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -752,7 +752,7 @@
 
         </RelativeLayout>
 
-        <com.kkapps.memorybank.commons.views.MyTextView
+        <com.kkapps.commons.views.MyTextView
             android:id="@+id/widgets_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -772,7 +772,7 @@
             android:paddingEnd="@dimen/normal_margin"
             android:paddingBottom="@dimen/bigger_margin">
 
-            <com.kkapps.memorybank.commons.views.MyTextView
+            <com.kkapps.commons.views.MyTextView
                 android:id="@+id/settings_font_size_label"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -782,7 +782,7 @@
                 android:paddingEnd="@dimen/medium_margin"
                 android:text="@string/font_size" />
 
-            <com.kkapps.memorybank.commons.views.MyTextView
+            <com.kkapps.commons.views.MyTextView
                 android:id="@+id/settings_font_size"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -803,7 +803,7 @@
             android:paddingEnd="@dimen/normal_margin"
             android:paddingBottom="@dimen/bigger_margin">
 
-            <com.kkapps.memorybank.commons.views.MyTextView
+            <com.kkapps.commons.views.MyTextView
                 android:id="@+id/settings_list_widget_view_to_open_label"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -813,7 +813,7 @@
                 android:paddingEnd="@dimen/medium_margin"
                 android:text="@string/view_to_open_from_widget" />
 
-            <com.kkapps.memorybank.commons.views.MyTextView
+            <com.kkapps.commons.views.MyTextView
                 android:id="@+id/settings_list_widget_view_to_open"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -834,7 +834,7 @@
             android:paddingEnd="@dimen/normal_margin"
             android:paddingBottom="@dimen/bigger_margin">
 
-            <com.kkapps.memorybank.commons.views.MyTextView
+            <com.kkapps.commons.views.MyTextView
                 android:id="@+id/settings_customize_widget_colors_label"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -844,7 +844,7 @@
 
         </RelativeLayout>
 
-        <com.kkapps.memorybank.commons.views.MyTextView
+        <com.kkapps.commons.views.MyTextView
             android:id="@+id/events_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -865,7 +865,7 @@
             android:paddingEnd="@dimen/normal_margin"
             android:paddingBottom="@dimen/activity_margin">
 
-            <com.kkapps.memorybank.commons.views.MySwitchCompat
+            <com.kkapps.commons.views.MySwitchCompat
                 android:id="@+id/settings_dim_past_events"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -886,7 +886,7 @@
             android:paddingEnd="@dimen/normal_margin"
             android:paddingBottom="@dimen/activity_margin">
 
-            <com.kkapps.memorybank.commons.views.MySwitchCompat
+            <com.kkapps.commons.views.MySwitchCompat
                 android:id="@+id/settings_allow_changing_time_zones"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -907,7 +907,7 @@
             android:paddingEnd="@dimen/normal_margin"
             android:paddingBottom="@dimen/bigger_margin">
 
-            <com.kkapps.memorybank.commons.views.MyTextView
+            <com.kkapps.commons.views.MyTextView
                 android:id="@+id/settings_delete_all_events"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -918,7 +918,7 @@
 
         </RelativeLayout>
 
-        <com.kkapps.memorybank.commons.views.MyTextView
+        <com.kkapps.commons.views.MyTextView
             android:id="@+id/migrating_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -939,7 +939,7 @@
             android:paddingEnd="@dimen/normal_margin"
             android:paddingBottom="@dimen/activity_margin">
 
-            <com.kkapps.memorybank.commons.views.MyTextView
+            <com.kkapps.commons.views.MyTextView
                 android:id="@+id/settings_export"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -960,7 +960,7 @@
             android:paddingEnd="@dimen/normal_margin"
             android:paddingBottom="@dimen/activity_margin">
 
-            <com.kkapps.memorybank.commons.views.MyTextView
+            <com.kkapps.commons.views.MyTextView
                 android:id="@+id/settings_import"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

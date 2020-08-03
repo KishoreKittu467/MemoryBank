@@ -10,8 +10,8 @@ import com.kkapps.memorybank.R
 import com.kkapps.memorybank.calendar.extensions.config
 import com.kkapps.memorybank.calendar.helpers.MEDIUM_ALPHA
 import com.kkapps.memorybank.calendar.models.DayYearly
-import com.kkapps.memorybank.commons.extensions.adjustAlpha
-import com.kkapps.memorybank.commons.extensions.getAdjustedPrimaryColor
+import com.kkapps.commons.extensions.adjustAlpha
+import com.kkapps.commons.extensions.getAdjustedPrimaryColor
 import java.util.*
 
 // used for displaying months at Yearly view

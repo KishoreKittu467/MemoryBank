@@ -17,7 +17,7 @@
         android:background="?attr/selectableItemBackground"
         android:padding="@dimen/activity_margin">
 
-        <com.kkapps.memorybank.commons.views.MyTextView
+        <com.kkapps.commons.views.MyTextView
             android:id="@+id/event_type_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

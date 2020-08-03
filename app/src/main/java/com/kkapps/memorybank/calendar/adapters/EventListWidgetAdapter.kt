@@ -18,10 +18,10 @@ import com.kkapps.memorybank.calendar.models.Event
 import com.kkapps.memorybank.calendar.models.ListEvent
 import com.kkapps.memorybank.calendar.models.ListItem
 import com.kkapps.memorybank.calendar.models.ListSection
-import com.kkapps.memorybank.commons.extensions.adjustAlpha
-import com.kkapps.memorybank.commons.extensions.setBackgroundColor
-import com.kkapps.memorybank.commons.extensions.setText
-import com.kkapps.memorybank.commons.extensions.setTextSize
+import com.kkapps.commons.extensions.adjustAlpha
+import com.kkapps.commons.extensions.setBackgroundColor
+import com.kkapps.commons.extensions.setText
+import com.kkapps.commons.extensions.setTextSize
 import org.joda.time.DateTime
 import java.util.*
 

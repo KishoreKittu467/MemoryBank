@@ -16,7 +16,7 @@ import androidx.appcompat.widget.AppCompatImageView
 import androidx.recyclerview.widget.RecyclerView
 import com.kkapps.memorybank.ItemDecoration.VerticalSectionItemDecoration
 import com.kkapps.memorybank.R
-import com.kkapps.memorybank.commons.extensions.DP
+import com.kkapps.commons.extensions.dpToValue
 
 class HorizontalSectionItemDecoration(context: Context,
                                       private val sectionCallback: VerticalSectionItemDecoration.SectionCallback,
@@ -28,9 +28,9 @@ class HorizontalSectionItemDecoration(context: Context,
     private lateinit var dot: AppCompatImageView
     private lateinit var previousHeader: SectionInfo
 
-    private var defaultOffset: Int = 8.DP(context).toInt()
+    private var defaultOffset: Int = 8.dpToValue(context).toInt()
     private var headerOffset = defaultOffset * 8
-    private val divisionOffset = 1.DP(context).toInt()
+    private val divisionOffset = 1.dpToValue(context).toInt()
 
     private var isSameTitle = false
 

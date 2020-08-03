@@ -15,13 +15,13 @@ import com.kkapps.memorybank.calendar.helpers.ITEM_EVENT
 import com.kkapps.memorybank.calendar.helpers.ITEM_EVENT_SIMPLE
 import com.kkapps.memorybank.calendar.helpers.LOW_ALPHA
 import com.kkapps.memorybank.calendar.models.Event
-import com.kkapps.memorybank.commons.adapters.MyRecyclerViewAdapter
-import com.kkapps.memorybank.commons.extensions.adjustAlpha
-import com.kkapps.memorybank.commons.extensions.applyColorFilter
-import com.kkapps.memorybank.commons.extensions.beInvisible
-import com.kkapps.memorybank.commons.extensions.beInvisibleIf
-import com.kkapps.memorybank.commons.helpers.ensureBackgroundThread
-import com.kkapps.memorybank.commons.views.MyRecyclerView
+import com.kkapps.commons.adapters.MyRecyclerViewAdapter
+import com.kkapps.commons.extensions.adjustAlpha
+import com.kkapps.commons.extensions.applyColorFilter
+import com.kkapps.commons.extensions.beInvisible
+import com.kkapps.commons.extensions.beInvisibleIf
+import com.kkapps.commons.helpers.ensureBackgroundThread
+import com.kkapps.commons.views.MyRecyclerView
 import kotlinx.android.synthetic.main.event_item_day_view.view.*
 
 class DayEventsAdapter(activity: SimpleActivity, val events: ArrayList<Event>, recyclerView: MyRecyclerView, itemClick: (Any) -> Unit)

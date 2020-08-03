@@ -20,7 +20,7 @@ import com.kkapps.memorybank.calendar.helpers.EVENT_OCCURRENCE_TS
 import com.kkapps.memorybank.calendar.helpers.Formatter
 import com.kkapps.memorybank.calendar.interfaces.NavigationListener
 import com.kkapps.memorybank.calendar.models.Event
-import com.kkapps.memorybank.commons.extensions.applyColorFilter
+import com.kkapps.commons.extensions.applyColorFilter
 import kotlinx.android.synthetic.main.fragment_day.view.*
 import kotlinx.android.synthetic.main.top_navigation.view.*
 import java.util.*

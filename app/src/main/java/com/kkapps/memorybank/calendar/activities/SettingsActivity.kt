@@ -12,11 +12,11 @@ import com.kkapps.memorybank.calendar.dialogs.SelectEventTypeDialog
 import com.kkapps.memorybank.calendar.extensions.*
 import com.kkapps.memorybank.calendar.helpers.*
 import com.kkapps.memorybank.calendar.models.EventType
-import com.kkapps.memorybank.commons.dialogs.*
-import com.kkapps.memorybank.commons.extensions.*
-import com.kkapps.memorybank.commons.helpers.*
-import com.kkapps.memorybank.commons.models.AlarmSound
-import com.kkapps.memorybank.commons.models.RadioItem
+import com.kkapps.commons.dialogs.*
+import com.kkapps.commons.extensions.*
+import com.kkapps.commons.helpers.*
+import com.kkapps.commons.models.AlarmSound
+import com.kkapps.commons.models.RadioItem
 import kotlinx.android.synthetic.main.activity_settings.*
 import org.joda.time.DateTime
 import java.io.File

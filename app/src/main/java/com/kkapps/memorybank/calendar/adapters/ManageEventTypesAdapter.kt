@@ -10,13 +10,13 @@ import com.kkapps.memorybank.calendar.extensions.eventsHelper
 import com.kkapps.memorybank.calendar.helpers.REGULAR_EVENT_TYPE_ID
 import com.kkapps.memorybank.calendar.interfaces.DeleteEventTypesListener
 import com.kkapps.memorybank.calendar.models.EventType
-import com.kkapps.memorybank.commons.adapters.MyRecyclerViewAdapter
-import com.kkapps.memorybank.commons.dialogs.ConfirmationDialog
-import com.kkapps.memorybank.commons.dialogs.RadioGroupDialog
-import com.kkapps.memorybank.commons.extensions.setFillWithStroke
-import com.kkapps.memorybank.commons.extensions.toast
-import com.kkapps.memorybank.commons.models.RadioItem
-import com.kkapps.memorybank.commons.views.MyRecyclerView
+import com.kkapps.commons.adapters.MyRecyclerViewAdapter
+import com.kkapps.commons.dialogs.ConfirmationDialog
+import com.kkapps.commons.dialogs.RadioGroupDialog
+import com.kkapps.commons.extensions.setFillWithStroke
+import com.kkapps.commons.extensions.toast
+import com.kkapps.commons.models.RadioItem
+import com.kkapps.commons.views.MyRecyclerView
 import kotlinx.android.synthetic.main.item_event_type.view.*
 import java.util.*
 

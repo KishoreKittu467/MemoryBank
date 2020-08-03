@@ -22,10 +22,10 @@ import com.kkapps.memorybank.calendar.interfaces.WeeklyCalendar
 import com.kkapps.memorybank.calendar.models.Event
 import com.kkapps.memorybank.calendar.models.EventWeeklyView
 import com.kkapps.memorybank.calendar.views.MyScrollView
-import com.kkapps.memorybank.commons.extensions.*
-import com.kkapps.memorybank.commons.helpers.DAY_SECONDS
-import com.kkapps.memorybank.commons.helpers.WEEK_SECONDS
-import com.kkapps.memorybank.commons.views.MyTextView
+import com.kkapps.commons.extensions.*
+import com.kkapps.commons.helpers.DAY_SECONDS
+import com.kkapps.commons.helpers.WEEK_SECONDS
+import com.kkapps.commons.views.MyTextView
 import kotlinx.android.synthetic.main.fragment_week.*
 import kotlinx.android.synthetic.main.fragment_week.view.*
 import org.joda.time.DateTime

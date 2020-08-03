@@ -4,8 +4,8 @@ import android.view.ViewGroup
 import androidx.appcompat.app.AlertDialog
 import com.kkapps.memorybank.R
 import com.kkapps.memorybank.calendar.activities.SimpleActivity
-import com.kkapps.memorybank.commons.extensions.hideKeyboard
-import com.kkapps.memorybank.commons.extensions.setupDialogStuff
+import com.kkapps.commons.extensions.hideKeyboard
+import com.kkapps.commons.extensions.setupDialogStuff
 import kotlinx.android.synthetic.main.dialog_edit_repeating_event.view.*
 
 class EditRepeatingEventDialog(val activity: SimpleActivity, val callback: (allOccurrences: Boolean) -> Unit) {

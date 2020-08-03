@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
+<!--    <item name="calcDialogStyle">@style/CustomCalcDialogStyle</item>-->
     <public name="CalcDialogStyle" type="style" />
 
     <style name="CalcDialogStyle">

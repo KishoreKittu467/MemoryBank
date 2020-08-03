@@ -6,8 +6,8 @@ import androidx.collection.LongSparseArray
 import com.kkapps.memorybank.calendar.extensions.*
 import com.kkapps.memorybank.calendar.models.Event
 import com.kkapps.memorybank.calendar.models.EventType
-import com.kkapps.memorybank.commons.extensions.getChoppedList
-import com.kkapps.memorybank.commons.helpers.ensureBackgroundThread
+import com.kkapps.commons.extensions.getChoppedList
+import com.kkapps.commons.helpers.ensureBackgroundThread
 
 class EventsHelper(val context: Context) {
     private val config = context.config

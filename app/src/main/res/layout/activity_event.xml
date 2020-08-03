@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <com.kkapps.memorybank.commons.views.MyEditText
+        <com.kkapps.commons.views.MyEditText
             android:id="@+id/event_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -27,7 +27,7 @@
             android:textCursorDrawable="@null"
             android:textSize="@dimen/day_text_size"/>
 
-        <com.kkapps.memorybank.commons.views.MyEditText
+        <com.kkapps.commons.views.MyEditText
             android:id="@+id/event_location"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -56,7 +56,7 @@
             android:paddingEnd="@dimen/small_margin"
             android:src="@drawable/ic_place_vector"/>
 
-        <com.kkapps.memorybank.commons.views.MyEditText
+        <com.kkapps.commons.views.MyEditText
             android:id="@+id/event_description"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -94,7 +94,7 @@
             android:padding="@dimen/medium_margin"
             android:src="@drawable/ic_clock_vector"/>
 
-        <com.kkapps.memorybank.commons.views.MySwitchCompat
+        <com.kkapps.commons.views.MySwitchCompat
             android:id="@+id/event_all_day"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -109,7 +109,7 @@
             android:textSize="@dimen/day_text_size"
             app:switchPadding="@dimen/small_margin"/>
 
-        <com.kkapps.memorybank.commons.views.MyTextView
+        <com.kkapps.commons.views.MyTextView
             android:id="@+id/event_start_date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -122,7 +122,7 @@
             android:textSize="@dimen/day_text_size"
             tools:text="January 1 1970"/>
 
-        <com.kkapps.memorybank.commons.views.MyTextView
+        <com.kkapps.commons.views.MyTextView
             android:id="@+id/event_start_time"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -133,7 +133,7 @@
             android:textSize="@dimen/day_text_size"
             tools:text="00:00"/>
 
-        <com.kkapps.memorybank.commons.views.MyTextView
+        <com.kkapps.commons.views.MyTextView
             android:id="@+id/event_end_date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -146,7 +146,7 @@
             android:textSize="@dimen/day_text_size"
             tools:text="January 1 1970"/>
 
-        <com.kkapps.memorybank.commons.views.MyTextView
+        <com.kkapps.commons.views.MyTextView
             android:id="@+id/event_end_time"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -168,7 +168,7 @@
             android:padding="@dimen/medium_margin"
             android:src="@drawable/ic_globe_vector"/>
 
-        <com.kkapps.memorybank.commons.views.MyTextView
+        <com.kkapps.commons.views.MyTextView
             android:id="@+id/event_time_zone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -205,7 +205,7 @@
             android:padding="@dimen/medium_margin"
             android:src="@drawable/ic_bell_vector"/>
 
-        <com.kkapps.memorybank.commons.views.MyTextView
+        <com.kkapps.commons.views.MyTextView
             android:id="@+id/event_reminder_1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -233,7 +233,7 @@
             android:padding="@dimen/activity_margin"
             android:src="@drawable/ic_bell_vector"/>
 
-        <com.kkapps.memorybank.commons.views.MyTextView
+        <com.kkapps.commons.views.MyTextView
             android:id="@+id/event_reminder_2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -263,7 +263,7 @@
             android:padding="@dimen/activity_margin"
             android:src="@drawable/ic_bell_vector"/>
 
-        <com.kkapps.memorybank.commons.views.MyTextView
+        <com.kkapps.commons.views.MyTextView
             android:id="@+id/event_reminder_3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -314,7 +314,7 @@
             android:padding="@dimen/medium_margin"
             android:src="@drawable/ic_repeat_vector"/>
 
-        <com.kkapps.memorybank.commons.views.MyTextView
+        <com.kkapps.commons.views.MyTextView
             android:id="@+id/event_repetition"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -336,7 +336,7 @@
             android:background="?attr/selectableItemBackground"
             android:visibility="gone">
 
-            <com.kkapps.memorybank.commons.views.MyTextView
+            <com.kkapps.commons.views.MyTextView
                 android:id="@+id/event_repetition_rule_label"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -346,7 +346,7 @@
                 android:text="@string/repeat_on"
                 android:textSize="@dimen/day_text_size"/>
 
-            <com.kkapps.memorybank.commons.views.MyTextView
+            <com.kkapps.commons.views.MyTextView
                 android:id="@+id/event_repetition_rule"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -368,7 +368,7 @@
             android:background="?attr/selectableItemBackground"
             android:visibility="gone">
 
-            <com.kkapps.memorybank.commons.views.MyTextView
+            <com.kkapps.commons.views.MyTextView
                 android:id="@+id/event_repetition_limit_label"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -379,7 +379,7 @@
                 android:text="@string/repeat_till"
                 android:textSize="@dimen/day_text_size"/>
 
-            <com.kkapps.memorybank.commons.views.MyTextView
+            <com.kkapps.commons.views.MyTextView
                 android:id="@+id/event_repetition_limit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -450,7 +450,7 @@
             android:background="?attr/selectableItemBackground"
             android:visibility="gone">
 
-            <com.kkapps.memorybank.commons.views.MyTextView
+            <com.kkapps.commons.views.MyTextView
                 android:id="@+id/event_caldav_calendar_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -464,7 +464,7 @@
                 android:textSize="@dimen/day_text_size"
                 tools:text="My calendar"/>
 
-            <com.kkapps.memorybank.commons.views.MyTextView
+            <com.kkapps.commons.views.MyTextView
                 android:id="@+id/event_caldav_calendar_email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -476,7 +476,7 @@
                 android:paddingEnd="@dimen/medium_margin"
                 android:paddingBottom="@dimen/medium_margin"
                 android:textSize="@dimen/meta_text_size"
-                tools:text="hello@simplemobiletools.com"/>
+                tools:text="hello@kkapps.com"/>
 
             <ImageView
                 android:id="@+id/event_caldav_calendar_color"
@@ -519,7 +519,7 @@
             android:layout_toEndOf="@+id/event_type_image"
             android:background="?attr/selectableItemBackground">
 
-            <com.kkapps.memorybank.commons.views.MyTextView
+            <com.kkapps.commons.views.MyTextView
                 android:id="@+id/event_type"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

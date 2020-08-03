@@ -6,10 +6,10 @@ import com.kkapps.memorybank.calendar.extensions.eventTypesDB
 import com.kkapps.memorybank.calendar.helpers.IcsExporter.ExportResult.*
 import com.kkapps.memorybank.calendar.models.CalDAVCalendar
 import com.kkapps.memorybank.calendar.models.Event
-import com.kkapps.memorybank.commons.activities.BaseSimpleActivity
-import com.kkapps.memorybank.commons.extensions.toast
-import com.kkapps.memorybank.commons.extensions.writeLn
-import com.kkapps.memorybank.commons.helpers.ensureBackgroundThread
+import com.kkapps.commons.activities.BaseSimpleActivity
+import com.kkapps.commons.extensions.toast
+import com.kkapps.commons.extensions.writeLn
+import com.kkapps.commons.helpers.ensureBackgroundThread
 import java.io.BufferedWriter
 import java.io.OutputStream
 

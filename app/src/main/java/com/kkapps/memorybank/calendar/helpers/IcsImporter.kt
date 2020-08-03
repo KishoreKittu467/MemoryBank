@@ -8,8 +8,8 @@ import com.kkapps.memorybank.calendar.helpers.IcsImporter.ImportResult.*
 import com.kkapps.memorybank.calendar.models.Event
 import com.kkapps.memorybank.calendar.models.EventType
 import com.kkapps.memorybank.calendar.models.Reminder
-import com.kkapps.memorybank.commons.extensions.areDigitsOnly
-import com.kkapps.memorybank.commons.extensions.showErrorToast
+import com.kkapps.commons.extensions.areDigitsOnly
+import com.kkapps.commons.extensions.showErrorToast
 import org.joda.time.DateTimeZone
 import java.io.File
 

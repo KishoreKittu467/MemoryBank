@@ -2,7 +2,7 @@ package com.kkapps.memorybank.home.models
 
 import androidx.room.ColumnInfo
 import androidx.room.PrimaryKey
-import com.kkapps.memorybank.commons.utils.Constants
+import com.kkapps.memorybank.home.utils.Constants
 
 data class Element(
     @ColumnInfo(name = "element_type") var elementType: FieldType,

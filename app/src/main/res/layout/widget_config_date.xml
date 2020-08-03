@@ -53,7 +53,7 @@
         android:layout_toRightOf="@+id/config_bg_color"
         android:background="@android:color/white">
 
-        <com.kkapps.memorybank.commons.views.MySeekBar
+        <com.kkapps.commons.views.MySeekBar
             android:id="@+id/config_bg_seekbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

@@ -14,7 +14,7 @@
         android:paddingEnd="@dimen/activity_margin"
         android:paddingTop="@dimen/activity_margin">
 
-        <com.kkapps.memorybank.commons.views.MyEditText
+        <com.kkapps.commons.views.MyEditText
             android:id="@+id/dialog_custom_repeat_interval_value"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -31,7 +31,7 @@
             android:layout_height="wrap_content"
             android:paddingTop="@dimen/normal_margin">
 
-            <com.kkapps.memorybank.commons.views.MyCompatRadioButton
+            <com.kkapps.commons.views.MyCompatRadioButton
                 android:id="@+id/dialog_radio_days"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -39,7 +39,7 @@
                 android:paddingTop="@dimen/normal_margin"
                 android:text="@string/days_raw"/>
 
-            <com.kkapps.memorybank.commons.views.MyCompatRadioButton
+            <com.kkapps.commons.views.MyCompatRadioButton
                 android:id="@+id/dialog_radio_weeks"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -47,7 +47,7 @@
                 android:paddingTop="@dimen/normal_margin"
                 android:text="@string/weeks_raw"/>
 
-            <com.kkapps.memorybank.commons.views.MyCompatRadioButton
+            <com.kkapps.commons.views.MyCompatRadioButton
                 android:id="@+id/dialog_radio_months"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -55,7 +55,7 @@
                 android:paddingTop="@dimen/normal_margin"
                 android:text="@string/months_raw"/>
 
-            <com.kkapps.memorybank.commons.views.MyCompatRadioButton
+            <com.kkapps.commons.views.MyCompatRadioButton
                 android:id="@+id/dialog_radio_years"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

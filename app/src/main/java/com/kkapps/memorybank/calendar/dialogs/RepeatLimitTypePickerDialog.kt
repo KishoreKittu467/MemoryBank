@@ -9,9 +9,9 @@ import com.kkapps.memorybank.calendar.extensions.config
 import com.kkapps.memorybank.calendar.extensions.seconds
 import com.kkapps.memorybank.calendar.helpers.Formatter
 import com.kkapps.memorybank.calendar.helpers.getNowSeconds
-import com.kkapps.memorybank.commons.extensions.getDialogTheme
-import com.kkapps.memorybank.commons.extensions.setupDialogStuff
-import com.kkapps.memorybank.commons.extensions.value
+import com.kkapps.commons.extensions.getDialogTheme
+import com.kkapps.commons.extensions.setupDialogStuff
+import com.kkapps.commons.extensions.value
 import kotlinx.android.synthetic.main.dialog_repeat_limit_type_picker.view.*
 import org.joda.time.DateTime
 import java.util.*

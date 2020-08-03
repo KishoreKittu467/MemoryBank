@@ -4,7 +4,7 @@ import android.content.res.Resources
 import android.graphics.Bitmap
 import android.graphics.drawable.BitmapDrawable
 import android.widget.TextView
-import com.kkapps.memorybank.commons.extensions.applyColorFilter
+import com.kkapps.commons.extensions.applyColorFilter
 
 fun TextView.addResizedBackgroundDrawable(res: Resources, drawableHeight: Int, primaryColor: Int, drawableId: Int) {
     val baseDrawable = res.getDrawable(drawableId)

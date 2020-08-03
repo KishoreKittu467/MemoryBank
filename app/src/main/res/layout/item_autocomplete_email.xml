@@ -34,6 +34,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/item_autocomplete_image"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="hello@simplemobiletools.com"/>
+        tools:text="hello@kkapps.com"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

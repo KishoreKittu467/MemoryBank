@@ -17,7 +17,7 @@ import com.kkapps.memorybank.calendar.extensions.launchNewEventIntent
 import com.kkapps.memorybank.calendar.interfaces.MonthlyCalendar
 import com.kkapps.memorybank.calendar.models.DayMonthly
 import com.kkapps.memorybank.calendar.models.Event
-import com.kkapps.memorybank.commons.extensions.*
+import com.kkapps.commons.extensions.*
 import org.joda.time.DateTime
 
 class MyWidgetMonthlyProvider : AppWidgetProvider() {

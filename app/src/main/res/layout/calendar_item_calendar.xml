@@ -7,7 +7,7 @@
     android:layout_height="wrap_content"
     android:background="?attr/selectableItemBackground">
 
-    <com.kkapps.memorybank.commons.views.MySwitchCompat
+    <com.kkapps.commons.views.MySwitchCompat
         android:id="@+id/calendar_item_calendar_switch"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

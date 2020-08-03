@@ -8,7 +8,7 @@
     android:paddingTop="@dimen/medium_margin"
     android:paddingBottom="@dimen/medium_margin">
 
-    <com.kkapps.memorybank.commons.views.MyAutoCompleteTextView
+    <com.kkapps.commons.views.MyAutoCompleteTextView
         android:id="@+id/event_attendee"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -50,7 +50,7 @@
             android:src="@drawable/ic_question_yellow"
             android:visibility="gone"/>
 
-        <com.kkapps.memorybank.commons.views.MyTextView
+        <com.kkapps.commons.views.MyTextView
             android:id="@+id/event_contact_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -75,7 +75,7 @@
             android:padding="@dimen/small_margin"
             android:src="@drawable/ic_cross_vector"/>
 
-        <com.kkapps.memorybank.commons.views.MyTextView
+        <com.kkapps.commons.views.MyTextView
             android:id="@+id/event_contact_me_status"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

@@ -19,7 +19,7 @@
         android:padding="@dimen/medium_margin"
         android:src="@drawable/ic_bell_vector"/>
 
-    <com.kkapps.memorybank.commons.views.MyTextView
+    <com.kkapps.commons.views.MyTextView
         android:id="@+id/set_reminders_1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -30,7 +30,7 @@
         android:paddingBottom="@dimen/activity_margin"
         android:textSize="@dimen/day_text_size"/>
 
-    <com.kkapps.memorybank.commons.views.MyTextView
+    <com.kkapps.commons.views.MyTextView
         android:id="@+id/set_reminders_2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -43,7 +43,7 @@
         android:textSize="@dimen/day_text_size"
         android:visibility="gone"/>
 
-    <com.kkapps.memorybank.commons.views.MyTextView
+    <com.kkapps.commons.views.MyTextView
         android:id="@+id/set_reminders_3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

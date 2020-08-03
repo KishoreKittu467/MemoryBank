@@ -11,10 +11,10 @@ import com.kkapps.memorybank.calendar.extensions.config
 import com.kkapps.memorybank.calendar.extensions.eventsHelper
 import com.kkapps.memorybank.calendar.helpers.STORED_LOCALLY_ONLY
 import com.kkapps.memorybank.calendar.models.CalDAVCalendar
-import com.kkapps.memorybank.commons.extensions.setFillWithStroke
-import com.kkapps.memorybank.commons.extensions.setupDialogStuff
-import com.kkapps.memorybank.commons.extensions.updateTextColors
-import com.kkapps.memorybank.commons.helpers.ensureBackgroundThread
+import com.kkapps.commons.extensions.setFillWithStroke
+import com.kkapps.commons.extensions.setupDialogStuff
+import com.kkapps.commons.extensions.updateTextColors
+import com.kkapps.commons.helpers.ensureBackgroundThread
 import kotlinx.android.synthetic.main.dialog_select_radio_group.view.*
 import kotlinx.android.synthetic.main.radio_button_with_color.view.*
 

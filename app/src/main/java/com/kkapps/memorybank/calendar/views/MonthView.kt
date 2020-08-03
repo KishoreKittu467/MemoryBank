@@ -18,10 +18,10 @@ import com.kkapps.memorybank.calendar.helpers.MEDIUM_ALPHA
 import com.kkapps.memorybank.calendar.models.DayMonthly
 import com.kkapps.memorybank.calendar.models.Event
 import com.kkapps.memorybank.calendar.models.MonthViewEvent
-import com.kkapps.memorybank.commons.extensions.adjustAlpha
-import com.kkapps.memorybank.commons.extensions.getAdjustedPrimaryColor
-import com.kkapps.memorybank.commons.extensions.getContrastColor
-import com.kkapps.memorybank.commons.extensions.moveLastItemToFront
+import com.kkapps.commons.extensions.adjustAlpha
+import com.kkapps.commons.extensions.getAdjustedPrimaryColor
+import com.kkapps.commons.extensions.getContrastColor
+import com.kkapps.commons.extensions.moveLastItemToFront
 import org.joda.time.DateTime
 import org.joda.time.Days
 

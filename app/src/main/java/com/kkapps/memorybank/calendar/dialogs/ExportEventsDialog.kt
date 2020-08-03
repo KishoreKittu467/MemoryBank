@@ -8,9 +8,9 @@ import com.kkapps.memorybank.calendar.activities.SimpleActivity
 import com.kkapps.memorybank.calendar.adapters.FilterEventTypeAdapter
 import com.kkapps.memorybank.calendar.extensions.config
 import com.kkapps.memorybank.calendar.extensions.eventsHelper
-import com.kkapps.memorybank.commons.dialogs.FilePickerDialog
-import com.kkapps.memorybank.commons.extensions.*
-import com.kkapps.memorybank.commons.helpers.ensureBackgroundThread
+import com.kkapps.commons.dialogs.FilePickerDialog
+import com.kkapps.commons.extensions.*
+import com.kkapps.commons.helpers.ensureBackgroundThread
 import kotlinx.android.synthetic.main.dialog_export_events.view.*
 import java.io.File
 import java.util.*

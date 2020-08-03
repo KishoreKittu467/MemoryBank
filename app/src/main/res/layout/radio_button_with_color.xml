@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="horizontal">
 
-    <com.kkapps.memorybank.commons.views.MyCompatRadioButton
+    <com.kkapps.commons.views.MyCompatRadioButton
         android:id="@+id/dialog_radio_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

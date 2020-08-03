@@ -4,7 +4,7 @@ import android.content.Context
 import com.kkapps.memorybank.calendar.extensions.eventsHelper
 import com.kkapps.memorybank.calendar.interfaces.WeeklyCalendar
 import com.kkapps.memorybank.calendar.models.Event
-import com.kkapps.memorybank.commons.helpers.WEEK_SECONDS
+import com.kkapps.commons.helpers.WEEK_SECONDS
 import java.util.*
 
 class WeeklyCalendarImpl(val callback: WeeklyCalendar, val context: Context) {

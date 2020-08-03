@@ -11,7 +11,7 @@ import com.kkapps.memorybank.calendar.extensions.updateListWidget
 import com.kkapps.memorybank.calendar.helpers.EVENT_ID
 import com.kkapps.memorybank.calendar.helpers.Formatter
 import com.kkapps.memorybank.calendar.helpers.REMINDER_NOTIFICATION
-import com.kkapps.memorybank.commons.helpers.ensureBackgroundThread
+import com.kkapps.commons.helpers.ensureBackgroundThread
 
 class NotificationReceiver : BroadcastReceiver() {
     override fun onReceive(context: Context, intent: Intent) {

@@ -7,7 +7,7 @@ import com.kkapps.memorybank.home.models.Image
 import com.kkapps.memorybank.home.models.Recursion
 import com.kkapps.memorybank.home.models.Task
 import com.kkapps.memorybank.home.models.Entity
-import com.kkapps.memorybank.commons.utils.Constants
+import com.kkapps.memorybank.home.utils.Constants
 
 class Diary(
 

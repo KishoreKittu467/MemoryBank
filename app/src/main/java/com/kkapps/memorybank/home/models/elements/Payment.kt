@@ -7,7 +7,7 @@ import com.kkapps.memorybank.home.models.Image
 import com.kkapps.memorybank.home.models.Recursion
 import com.kkapps.memorybank.home.models.PersonLite
 import com.kkapps.memorybank.home.models.Entity
-import com.kkapps.memorybank.commons.utils.Constants
+import com.kkapps.memorybank.home.utils.Constants
 
 class Payment(
 
@@ -33,7 +33,8 @@ class Payment(
     @ColumnInfo(name = "feeling") var feeling: FieldType = FieldType(Constants.FEELING_HPY),
 
     @ColumnInfo(name = "amount") var amount: Float = 0F,
-    @ColumnInfo(name = "payer") var payer: PersonLite = PersonLite(name = Constants.MY_NAME, image = Image(Constants.MY_DP_1), isMarked = Constants.CAN_I_BE_STARRED),
+    @ColumnInfo(name = "payer") var payer: PersonLite = PersonLite(name = Constants.MY_NAME, image = Image(
+        Constants.MY_DP_1), isMarked = Constants.CAN_I_BE_STARRED),
     @ColumnInfo(name = "payee") var payee: PersonLite? = null, // default = none, Entity(personId, personName, Image(Constants.MY_DP_1))
     @ColumnInfo(name = "tx_type") var txType: FieldType = FieldType(Constants.TxTYPE_PAID),
     @ColumnInfo(name = "source") var source: FieldType? = FieldType(Constants.TxMODE_CASH),

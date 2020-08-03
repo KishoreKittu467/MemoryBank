@@ -5,7 +5,7 @@ import androidx.appcompat.app.AlertDialog
 import com.kkapps.memorybank.R
 import com.kkapps.memorybank.calendar.extensions.config
 import com.kkapps.memorybank.calendar.helpers.REMINDER_OFF
-import com.kkapps.memorybank.commons.extensions.*
+import com.kkapps.commons.extensions.*
 import kotlinx.android.synthetic.main.dialog_set_reminders.view.*
 
 class SetRemindersDialog(val activity: Activity, val callback: (reminders: ArrayList<Int>) -> Unit) {

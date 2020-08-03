@@ -15,7 +15,7 @@ import com.kkapps.memorybank.calendar.extensions.getWidgetFontSize
 import com.kkapps.memorybank.calendar.extensions.launchNewEventIntent
 import com.kkapps.memorybank.calendar.services.WidgetService
 import com.kkapps.memorybank.calendar.services.WidgetServiceEmpty
-import com.kkapps.memorybank.commons.extensions.*
+import com.kkapps.commons.extensions.*
 import org.joda.time.DateTime
 
 class MyWidgetListProvider : AppWidgetProvider() {

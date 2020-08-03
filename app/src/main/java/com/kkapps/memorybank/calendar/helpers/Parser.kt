@@ -6,8 +6,8 @@ import com.kkapps.memorybank.calendar.extensions.isXYearlyRepetition
 import com.kkapps.memorybank.calendar.extensions.seconds
 import com.kkapps.memorybank.calendar.models.Event
 import com.kkapps.memorybank.calendar.models.EventRepetition
-import com.kkapps.memorybank.commons.extensions.areDigitsOnly
-import com.kkapps.memorybank.commons.helpers.*
+import com.kkapps.commons.extensions.areDigitsOnly
+import com.kkapps.commons.helpers.*
 import org.joda.time.DateTimeZone
 import org.joda.time.format.DateTimeFormat
 

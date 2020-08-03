@@ -6,7 +6,7 @@ import com.kkapps.memorybank.calendar.activities.SimpleActivity
 import com.kkapps.memorybank.calendar.adapters.FilterEventTypeAdapter
 import com.kkapps.memorybank.calendar.extensions.config
 import com.kkapps.memorybank.calendar.extensions.eventsHelper
-import com.kkapps.memorybank.commons.extensions.setupDialogStuff
+import com.kkapps.commons.extensions.setupDialogStuff
 import kotlinx.android.synthetic.main.dialog_filter_event_types.view.*
 
 class FilterEventTypesDialog(val activity: SimpleActivity, val callback: () -> Unit) {

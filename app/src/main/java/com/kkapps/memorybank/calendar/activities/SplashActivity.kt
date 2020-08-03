@@ -3,7 +3,7 @@ package com.kkapps.memorybank.calendar.activities
 import android.content.Intent
 import com.kkapps.memorybank.calendar.extensions.getNewEventTimestampFromCode
 import com.kkapps.memorybank.calendar.helpers.*
-import com.kkapps.memorybank.commons.activities.BaseSplashActivity
+import com.kkapps.commons.activities.BaseSplashActivity
 import org.joda.time.DateTime
 
 class SplashActivity : BaseSplashActivity() {

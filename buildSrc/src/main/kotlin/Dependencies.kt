@@ -30,18 +30,13 @@ object AppPlugins {
 
 }
 
-object Apps {
+object CustomLibs {
     //Do not make these private even after auto suggestion
     // TODO: 20/07/20 try to add these to settings.gradle.kts
-    const val APP = ":app"
-    const val DEMO_BUBBLE_HEADS = ":BubbleHeadsDemo"
-    const val DEMO_CALC_DIALOG = ":CalculatorDialogDemo"
-    const val DEMO_PAGE_FLIP = ":PageFlipDemo"
+    const val LIB_COMMONS = ":Commons"
 
-    val allDemoApps = listOf(
-        DEMO_BUBBLE_HEADS,
-        DEMO_CALC_DIALOG,
-        DEMO_PAGE_FLIP
+    val allCustomLibs = listOf(
+        LIB_COMMONS
     )
 }
 
@@ -95,7 +90,11 @@ object Deps { // Do not make these private even after auto suggestion
     const val junitExt = "androidx.test.ext:junit:${Versions.JUNIT_EXT}"
     const val espresso = "androidx.test.espresso:espresso-core:${Versions.ESPRESSO}"
 
+    //commons
+    val allCommonImplDeps = listOf(stdlib, coreKTX, constraintLayout, androignito, docFile, swipeRefreshLayout)
+    val allCommonApiDeps = listOf(ajalt, dulingoRTL, gson, appCompat, material, glide)
 
+    //App
     val allAppImplDeps: List<String> = listOf(
         stdlib, jodaTime, multidex, coreKTX, material, swipeRefreshLayout, room, appCompat,
         lifeCycleExtensions, constraintLayout, docFile, exifInterface, glide, androignito

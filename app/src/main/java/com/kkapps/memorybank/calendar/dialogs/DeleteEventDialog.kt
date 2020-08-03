@@ -7,8 +7,8 @@ import com.kkapps.memorybank.R
 import com.kkapps.memorybank.calendar.helpers.DELETE_ALL_OCCURRENCES
 import com.kkapps.memorybank.calendar.helpers.DELETE_FUTURE_OCCURRENCES
 import com.kkapps.memorybank.calendar.helpers.DELETE_SELECTED_OCCURRENCE
-import com.kkapps.memorybank.commons.extensions.beVisibleIf
-import com.kkapps.memorybank.commons.extensions.setupDialogStuff
+import com.kkapps.commons.extensions.beVisibleIf
+import com.kkapps.commons.extensions.setupDialogStuff
 import kotlinx.android.synthetic.main.dialog_delete_event.view.*
 
 class DeleteEventDialog(val activity: Activity, eventIds: List<Long>, hasRepeatableEvent: Boolean, val callback: (deleteRule: Int) -> Unit) {

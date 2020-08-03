@@ -7,7 +7,7 @@
     android:layout_centerHorizontal="true"
     android:layout_margin="@dimen/activity_margin">
 
-    <com.kkapps.memorybank.commons.views.MyRecyclerView
+    <com.kkapps.commons.views.MyRecyclerView
         android:id="@+id/config_events_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -18,7 +18,7 @@
         android:divider="@null"
         android:paddingStart="@dimen/activity_margin"
         android:paddingTop="@dimen/medium_margin"
-        app:layoutManager="com.kkapps.memorybank.commons.views.MyLinearLayoutManager" />
+        app:layoutManager="com.kkapps.commons.views.MyLinearLayoutManager" />
 
     <ImageView
         android:id="@+id/config_bg_color"
@@ -35,7 +35,7 @@
         android:layout_toEndOf="@+id/config_bg_color"
         android:background="@android:color/white">
 
-        <com.kkapps.memorybank.commons.views.MySeekBar
+        <com.kkapps.commons.views.MySeekBar
             android:id="@+id/config_bg_seekbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

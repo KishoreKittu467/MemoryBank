@@ -8,10 +8,10 @@ import com.kkapps.memorybank.calendar.helpers.DAY
 import com.kkapps.memorybank.calendar.helpers.MONTH
 import com.kkapps.memorybank.calendar.helpers.WEEK
 import com.kkapps.memorybank.calendar.helpers.YEAR
-import com.kkapps.memorybank.commons.extensions.hideKeyboard
-import com.kkapps.memorybank.commons.extensions.setupDialogStuff
-import com.kkapps.memorybank.commons.extensions.showKeyboard
-import com.kkapps.memorybank.commons.extensions.value
+import com.kkapps.commons.extensions.hideKeyboard
+import com.kkapps.commons.extensions.setupDialogStuff
+import com.kkapps.commons.extensions.showKeyboard
+import com.kkapps.commons.extensions.value
 import kotlinx.android.synthetic.main.dialog_custom_event_repeat_interval.view.*
 
 class CustomEventRepeatIntervalDialog(val activity: Activity, val callback: (seconds: Int) -> Unit) {

@@ -2,14 +2,14 @@ package com.kkapps.memorybank.calendar.activities
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.kkapps.memorybank.commons.extensions.baseConfig
-import com.kkapps.memorybank.commons.extensions.checkAppSideloading
-import com.kkapps.memorybank.commons.extensions.isThankYouInstalled
-import com.kkapps.memorybank.commons.extensions.showSideloadingDialog
-import com.kkapps.memorybank.commons.extensions.getSharedTheme
-import com.kkapps.memorybank.commons.extensions.checkAppIconColor
-import com.kkapps.memorybank.commons.helpers.SIDELOADING_TRUE
-import com.kkapps.memorybank.commons.helpers.SIDELOADING_UNCHECKED
+import com.kkapps.commons.extensions.baseConfig
+import com.kkapps.commons.extensions.checkAppSideloading
+import com.kkapps.commons.extensions.isThankYouInstalled
+import com.kkapps.commons.extensions.showSideloadingDialog
+import com.kkapps.commons.extensions.getSharedTheme
+import com.kkapps.commons.extensions.checkAppIconColor
+import com.kkapps.commons.helpers.SIDELOADING_TRUE
+import com.kkapps.commons.helpers.SIDELOADING_UNCHECKED
 
 abstract class BaseSplashActivity : AppCompatActivity() {
     abstract fun initActivity()

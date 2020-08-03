@@ -14,7 +14,7 @@ import android.widget.TextView
 import androidx.appcompat.widget.AppCompatImageView
 import androidx.recyclerview.widget.RecyclerView
 import com.kkapps.memorybank.R
-import com.kkapps.memorybank.commons.extensions.DP
+import com.kkapps.commons.extensions.dpToValue
 import com.kkapps.memorybank.stickytimeline.RecyclerViewAttr
 import com.kkapps.memorybank.stickytimeline.SectionInfo
 
@@ -39,7 +39,7 @@ class VerticalSectionItemDecoration(
     private var headerTitle: TextView? = null
     private var headerSubTitle: TextView? = null
     private var dot: AppCompatImageView? = null
-    private var defaultOffset: Int = 8.DP(context).toInt()
+    private var defaultOffset: Int = 8.dpToValue(context).toInt()
     private var headerOffset = defaultOffset * 8
 
 

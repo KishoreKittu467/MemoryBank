@@ -7,9 +7,9 @@ import com.kkapps.memorybank.R
 import com.kkapps.memorybank.calendar.extensions.config
 import com.kkapps.memorybank.calendar.extensions.eventsHelper
 import com.kkapps.memorybank.calendar.models.EventType
-import com.kkapps.memorybank.commons.dialogs.ColorPickerDialog
-import com.kkapps.memorybank.commons.extensions.*
-import com.kkapps.memorybank.commons.helpers.ensureBackgroundThread
+import com.kkapps.commons.dialogs.ColorPickerDialog
+import com.kkapps.commons.extensions.*
+import com.kkapps.commons.helpers.ensureBackgroundThread
 import kotlinx.android.synthetic.main.dialog_event_type.view.*
 
 class EditEventTypeDialog(val activity: Activity, var eventType: EventType? = null, val callback: (eventType: EventType) -> Unit) {

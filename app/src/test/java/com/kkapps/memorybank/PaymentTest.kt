@@ -4,7 +4,7 @@ import com.kkapps.memorybank.home.models.Image
 import com.kkapps.memorybank.home.models.FieldType
 import com.kkapps.memorybank.home.models.PersonLite
 import com.kkapps.memorybank.home.models.elements.Payment
-import com.kkapps.memorybank.commons.utils.Constants
+import com.kkapps.memorybank.home.utils.Constants
 import junit.framework.Assert.assertEquals
 import org.junit.Test
 

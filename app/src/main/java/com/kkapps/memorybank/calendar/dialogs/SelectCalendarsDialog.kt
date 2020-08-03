@@ -9,8 +9,8 @@ import com.kkapps.memorybank.R
 import com.kkapps.memorybank.calendar.activities.SimpleActivity
 import com.kkapps.memorybank.calendar.extensions.calDAVHelper
 import com.kkapps.memorybank.calendar.extensions.config
-import com.kkapps.memorybank.commons.extensions.beVisibleIf
-import com.kkapps.memorybank.commons.extensions.setupDialogStuff
+import com.kkapps.commons.extensions.beVisibleIf
+import com.kkapps.commons.extensions.setupDialogStuff
 import kotlinx.android.synthetic.main.calendar_item_account.view.*
 import kotlinx.android.synthetic.main.calendar_item_calendar.view.*
 import kotlinx.android.synthetic.main.dialog_select_calendars.view.*

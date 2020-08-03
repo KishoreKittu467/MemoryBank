@@ -15,11 +15,11 @@ import com.kkapps.memorybank.calendar.helpers.MyWidgetListProvider
 import com.kkapps.memorybank.calendar.models.ListEvent
 import com.kkapps.memorybank.calendar.models.ListItem
 import com.kkapps.memorybank.calendar.models.ListSection
-import com.kkapps.memorybank.commons.dialogs.ColorPickerDialog
-import com.kkapps.memorybank.commons.extensions.adjustAlpha
-import com.kkapps.memorybank.commons.extensions.applyColorFilter
-import com.kkapps.memorybank.commons.extensions.setFillWithStroke
-import com.kkapps.memorybank.commons.helpers.IS_CUSTOMIZING_COLORS
+import com.kkapps.commons.dialogs.ColorPickerDialog
+import com.kkapps.commons.extensions.adjustAlpha
+import com.kkapps.commons.extensions.applyColorFilter
+import com.kkapps.commons.extensions.setFillWithStroke
+import com.kkapps.commons.helpers.IS_CUSTOMIZING_COLORS
 import kotlinx.android.synthetic.main.widget_config_list.*
 import org.joda.time.DateTime
 import java.util.*

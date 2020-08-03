@@ -21,9 +21,9 @@ import com.kkapps.memorybank.calendar.helpers.Formatter
 import com.kkapps.memorybank.calendar.helpers.WEEK_START_DATE_TIME
 import com.kkapps.memorybank.calendar.interfaces.WeekFragmentListener
 import com.kkapps.memorybank.calendar.views.MyScrollView
-import com.kkapps.memorybank.commons.extensions.*
-import com.kkapps.memorybank.commons.helpers.WEEK_SECONDS
-import com.kkapps.memorybank.commons.views.MyViewPager
+import com.kkapps.commons.extensions.*
+import com.kkapps.commons.helpers.WEEK_SECONDS
+import com.kkapps.commons.views.MyViewPager
 import kotlinx.android.synthetic.main.fragment_week_holder.view.*
 import org.joda.time.DateTime
 

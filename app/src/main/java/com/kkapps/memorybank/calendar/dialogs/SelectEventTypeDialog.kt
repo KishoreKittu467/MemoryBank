@@ -9,11 +9,11 @@ import com.kkapps.memorybank.R
 import com.kkapps.memorybank.calendar.extensions.config
 import com.kkapps.memorybank.calendar.extensions.eventsHelper
 import com.kkapps.memorybank.calendar.models.EventType
-import com.kkapps.memorybank.commons.extensions.hideKeyboard
-import com.kkapps.memorybank.commons.extensions.setFillWithStroke
-import com.kkapps.memorybank.commons.extensions.setupDialogStuff
-import com.kkapps.memorybank.commons.extensions.updateTextColors
-import com.kkapps.memorybank.commons.views.MyCompatRadioButton
+import com.kkapps.commons.extensions.hideKeyboard
+import com.kkapps.commons.extensions.setFillWithStroke
+import com.kkapps.commons.extensions.setupDialogStuff
+import com.kkapps.commons.extensions.updateTextColors
+import com.kkapps.commons.views.MyCompatRadioButton
 import kotlinx.android.synthetic.main.dialog_select_radio_group.view.*
 import kotlinx.android.synthetic.main.radio_button_with_color.view.*
 import java.util.*

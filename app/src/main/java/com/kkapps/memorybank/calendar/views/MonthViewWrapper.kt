@@ -7,7 +7,7 @@ import android.widget.FrameLayout
 import com.kkapps.memorybank.R
 import com.kkapps.memorybank.calendar.extensions.config
 import com.kkapps.memorybank.calendar.models.DayMonthly
-import com.kkapps.memorybank.commons.extensions.onGlobalLayout
+import com.kkapps.commons.extensions.onGlobalLayout
 import kotlinx.android.synthetic.main.month_view.view.*
 
 // used in the Monthly view fragment, 1 view per screen

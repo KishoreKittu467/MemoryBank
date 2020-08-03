@@ -12,9 +12,9 @@ import com.kkapps.memorybank.R
 import com.kkapps.memorybank.calendar.extensions.*
 import com.kkapps.memorybank.calendar.models.*
 import com.kkapps.memorybank.calendar.objects.States.isUpdatingCalDAV
-import com.kkapps.memorybank.commons.extensions.*
-import com.kkapps.memorybank.commons.helpers.PERMISSION_READ_CALENDAR
-import com.kkapps.memorybank.commons.helpers.PERMISSION_WRITE_CALENDAR
+import com.kkapps.commons.extensions.*
+import com.kkapps.commons.helpers.PERMISSION_READ_CALENDAR
+import com.kkapps.commons.helpers.PERMISSION_WRITE_CALENDAR
 import org.joda.time.DateTimeZone
 import org.joda.time.format.DateTimeFormat
 import java.util.*

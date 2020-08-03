@@ -104,24 +104,24 @@
         </activity>
 
         <activity
-            android:name="com.kkapps.memorybank.commons.activities.AboutActivity"
+            android:name="com.kkapps.commons.activities.AboutActivity"
             android:label="@string/about"
             android:parentActivityName=".calendar.activities.MainActivity" />
 
         <activity
-            android:name="com.kkapps.memorybank.commons.activities.CustomizationActivity"
+            android:name="com.kkapps.commons.activities.CustomizationActivity"
             android:label="@string/customize_colors"
             android:parentActivityName=".calendar.activities.SettingsActivity" />
 
         <activity
-            android:name="com.kkapps.memorybank.commons.activities.LicenseActivity"
+            android:name="com.kkapps.commons.activities.LicenseActivity"
             android:label="@string/third_party_licences"
-            android:parentActivityName="com.kkapps.memorybank.commons.activities.AboutActivity" />
+            android:parentActivityName="com.kkapps.commons.activities.AboutActivity" />
 
         <activity
-            android:name="com.kkapps.memorybank.commons.activities.FAQActivity"
+            android:name="com.kkapps.commons.activities.FAQActivity"
             android:label="@string/frequently_asked_questions"
-            android:parentActivityName="com.kkapps.memorybank.commons.activities.AboutActivity" />
+            android:parentActivityName="com.kkapps.commons.activities.AboutActivity" />
 
         <activity
             android:name=".calendar.activities.EventActivity"

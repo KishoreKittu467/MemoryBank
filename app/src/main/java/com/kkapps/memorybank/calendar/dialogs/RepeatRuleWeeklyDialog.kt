@@ -4,8 +4,8 @@ import android.app.Activity
 import androidx.appcompat.app.AlertDialog
 import com.kkapps.memorybank.R
 import com.kkapps.memorybank.calendar.extensions.config
-import com.kkapps.memorybank.commons.extensions.setupDialogStuff
-import com.kkapps.memorybank.commons.views.MyAppCompatCheckbox
+import com.kkapps.commons.extensions.setupDialogStuff
+import com.kkapps.commons.views.MyAppCompatCheckbox
 import kotlinx.android.synthetic.main.dialog_vertical_linear_layout.view.*
 import java.util.*
 

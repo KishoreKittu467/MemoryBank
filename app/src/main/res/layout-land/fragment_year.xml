@@ -15,7 +15,7 @@
             android:layout_marginEnd="@dimen/yearly_padding_full"
             android:layout_weight="1">
 
-            <com.kkapps.memorybank.commons.views.MyTextView
+            <com.kkapps.commons.views.MyTextView
                 android:id="@+id/month_1_label"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -41,7 +41,7 @@
             android:layout_marginEnd="@dimen/yearly_padding_half"
             android:layout_weight="1">
 
-            <com.kkapps.memorybank.commons.views.MyTextView
+            <com.kkapps.commons.views.MyTextView
                 android:id="@+id/month_2_label"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -66,7 +66,7 @@
             android:layout_marginStart="@dimen/yearly_padding_full"
             android:layout_weight="1">
 
-            <com.kkapps.memorybank.commons.views.MyTextView
+            <com.kkapps.commons.views.MyTextView
                 android:id="@+id/month_3_label"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -90,7 +90,7 @@
             android:layout_marginEnd="@dimen/yearly_padding_full"
             android:layout_weight="1">
 
-            <com.kkapps.memorybank.commons.views.MyTextView
+            <com.kkapps.commons.views.MyTextView
                 android:id="@+id/month_4_label"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -119,7 +119,7 @@
             android:layout_marginEnd="@dimen/yearly_padding_half"
             android:layout_weight="1">
 
-            <com.kkapps.memorybank.commons.views.MyTextView
+            <com.kkapps.commons.views.MyTextView
                 android:id="@+id/month_5_label"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -144,7 +144,7 @@
             android:layout_marginStart="@dimen/yearly_padding_full"
             android:layout_weight="1">
 
-            <com.kkapps.memorybank.commons.views.MyTextView
+            <com.kkapps.commons.views.MyTextView
                 android:id="@+id/month_6_label"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -169,7 +169,7 @@
             android:layout_marginEnd="@dimen/yearly_padding_full"
             android:layout_weight="1">
 
-            <com.kkapps.memorybank.commons.views.MyTextView
+            <com.kkapps.commons.views.MyTextView
                 android:id="@+id/month_7_label"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -194,7 +194,7 @@
             android:layout_marginEnd="@dimen/yearly_padding_half"
             android:layout_weight="1">
 
-            <com.kkapps.memorybank.commons.views.MyTextView
+            <com.kkapps.commons.views.MyTextView
                 android:id="@+id/month_8_label"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -222,7 +222,7 @@
             android:layout_marginStart="@dimen/yearly_padding_full"
             android:layout_weight="1">
 
-            <com.kkapps.memorybank.commons.views.MyTextView
+            <com.kkapps.commons.views.MyTextView
                 android:id="@+id/month_9_label"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -247,7 +247,7 @@
             android:layout_marginEnd="@dimen/yearly_padding_full"
             android:layout_weight="1">
 
-            <com.kkapps.memorybank.commons.views.MyTextView
+            <com.kkapps.commons.views.MyTextView
                 android:id="@+id/month_10_label"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -272,7 +272,7 @@
             android:layout_marginEnd="@dimen/yearly_padding_half"
             android:layout_weight="1">
 
-            <com.kkapps.memorybank.commons.views.MyTextView
+            <com.kkapps.commons.views.MyTextView
                 android:id="@+id/month_11_label"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -297,7 +297,7 @@
             android:layout_marginStart="@dimen/yearly_padding_full"
             android:layout_weight="1">
 
-            <com.kkapps.memorybank.commons.views.MyTextView
+            <com.kkapps.commons.views.MyTextView
                 android:id="@+id/month_12_label"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

@@ -6,13 +6,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.kkapps.memorybank.commons.views.MyViewPager
+    <com.kkapps.commons.views.MyViewPager
         android:id="@+id/view_pager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="@dimen/activity_margin"/>
 
-    <com.kkapps.memorybank.commons.views.MyFloatingActionButton
+    <com.kkapps.commons.views.MyFloatingActionButton
         android:id="@+id/day_fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

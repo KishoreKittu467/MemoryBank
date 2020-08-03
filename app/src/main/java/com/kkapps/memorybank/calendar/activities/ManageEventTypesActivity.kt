@@ -9,9 +9,9 @@ import com.kkapps.memorybank.calendar.dialogs.EditEventTypeDialog
 import com.kkapps.memorybank.calendar.extensions.eventsHelper
 import com.kkapps.memorybank.calendar.interfaces.DeleteEventTypesListener
 import com.kkapps.memorybank.calendar.models.EventType
-import com.kkapps.memorybank.commons.extensions.toast
-import com.kkapps.memorybank.commons.extensions.updateTextColors
-import com.kkapps.memorybank.commons.helpers.ensureBackgroundThread
+import com.kkapps.commons.extensions.toast
+import com.kkapps.commons.extensions.updateTextColors
+import com.kkapps.commons.helpers.ensureBackgroundThread
 import kotlinx.android.synthetic.main.activity_manage_event_types.*
 import java.util.*
 

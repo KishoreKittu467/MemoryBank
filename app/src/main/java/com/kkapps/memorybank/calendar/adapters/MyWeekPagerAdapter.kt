@@ -8,7 +8,7 @@ import androidx.fragment.app.FragmentStatePagerAdapter
 import com.kkapps.memorybank.calendar.fragments.WeekFragment
 import com.kkapps.memorybank.calendar.helpers.WEEK_START_TIMESTAMP
 import com.kkapps.memorybank.calendar.interfaces.WeekFragmentListener
-import com.kkapps.memorybank.commons.helpers.DAY_SECONDS
+import com.kkapps.commons.helpers.DAY_SECONDS
 
 class MyWeekPagerAdapter(fm: FragmentManager, private val mWeekTimestamps: List<Long>, private val mListener: WeekFragmentListener) : FragmentStatePagerAdapter(fm) {
     private val mFragments = SparseArray<WeekFragment>()

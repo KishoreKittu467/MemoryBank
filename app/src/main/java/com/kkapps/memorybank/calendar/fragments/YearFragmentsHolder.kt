@@ -14,11 +14,11 @@ import com.kkapps.memorybank.calendar.activities.MainActivity
 import com.kkapps.memorybank.calendar.adapters.MyYearPagerAdapter
 import com.kkapps.memorybank.calendar.extensions.config
 import com.kkapps.memorybank.calendar.helpers.Formatter
-import com.kkapps.memorybank.commons.extensions.beGone
-import com.kkapps.memorybank.commons.extensions.getDialogTheme
-import com.kkapps.memorybank.commons.extensions.setupDialogStuff
-import com.kkapps.memorybank.commons.extensions.updateActionBarTitle
-import com.kkapps.memorybank.commons.views.MyViewPager
+import com.kkapps.commons.extensions.beGone
+import com.kkapps.commons.extensions.getDialogTheme
+import com.kkapps.commons.extensions.setupDialogStuff
+import com.kkapps.commons.extensions.updateActionBarTitle
+import com.kkapps.commons.views.MyViewPager
 import kotlinx.android.synthetic.main.fragment_years_holder.view.*
 import org.joda.time.DateTime
 

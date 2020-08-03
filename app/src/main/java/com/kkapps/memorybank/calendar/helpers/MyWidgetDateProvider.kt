@@ -10,9 +10,9 @@ import android.widget.RemoteViews
 import com.kkapps.memorybank.R
 import com.kkapps.memorybank.calendar.activities.SplashActivity
 import com.kkapps.memorybank.calendar.extensions.config
-import com.kkapps.memorybank.commons.extensions.applyColorFilter
-import com.kkapps.memorybank.commons.extensions.getLaunchIntent
-import com.kkapps.memorybank.commons.extensions.setText
+import com.kkapps.commons.extensions.applyColorFilter
+import com.kkapps.commons.extensions.getLaunchIntent
+import com.kkapps.commons.extensions.setText
 
 class MyWidgetDateProvider : AppWidgetProvider() {
     private val OPEN_APP_INTENT_ID = 1

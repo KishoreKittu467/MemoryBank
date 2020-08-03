@@ -7,8 +7,8 @@ import android.provider.CalendarContract
 import com.kkapps.memorybank.R
 import com.kkapps.memorybank.calendar.extensions.config
 import com.kkapps.memorybank.calendar.extensions.refreshCalDAVCalendars
-import com.kkapps.memorybank.commons.activities.BaseSimpleActivity
-import com.kkapps.memorybank.commons.helpers.ensureBackgroundThread
+import com.kkapps.commons.activities.BaseSimpleActivity
+import com.kkapps.commons.helpers.ensureBackgroundThread
 
 open class SimpleActivity : BaseSimpleActivity() {
     val CALDAV_REFRESH_DELAY = 3000L
