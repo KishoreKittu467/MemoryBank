@@ -38,7 +38,9 @@ android {
 }
 
 dependencies {
-    Deps.allCommonImplDeps.forEach { implementation(it) }
+    implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
     Deps.allCommonApiDeps.forEach { api(it) }
-    kapt(Deps.glideCompiler)
+    Deps.allCommonKaptDeps.forEach { kapt(it) }
+    Deps.allCommonTestImplDeps.forEach { testImplementation(it) }
+    Deps.allCommonAndroidTestImplDeps.forEach { androidTestImplementation(it) }
 }

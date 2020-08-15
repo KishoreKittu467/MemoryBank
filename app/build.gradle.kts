@@ -43,13 +43,8 @@ android {
 }
 
 dependencies {
-    implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
-//    CustomView.allCustomViews.forEach { api(project(it)) }
-    CustomLibs.allCustomLibs.forEach { implementation(project(it)) }
-
     Deps.allAppImplDeps.forEach { implementation(it) }
-    Deps.allAppApiDeps.forEach { api(it) }
-    Deps.allAppKaptDeps.forEach { kapt(it) }
-    Deps.allAppTestImplDeps.forEach { testImplementation(it) }
-    Deps.allAppAndroidTestImplDeps.forEach { androidTestImplementation(it) }
+    Deps.allCommonKaptDeps.forEach { kapt(it) }
+    CustomLibs.allCustomLibs.forEach { implementation(project(it)) }
+//    CustomView.allCustomViews.forEach { api(project(it)) }
 }

@@ -3,12 +3,11 @@ import org.gradle.api.JavaVersion
 object ProjectPlugins {
     private const val gradleTools = "com.android.tools.build:gradle:${Versions.gradleTools}"
     private const val timfreiheit = "de.timfreiheit.resourceplaceholders:placeholders:${Versions.timfreiheit}"
-    private const val kotlinGradle = "org.jetbrains.kotlin:kotlin-gradle-plugin:${Versions.kotlinGradle}"
     private const val dcendents = "com.github.dcendents:android-maven-gradle-plugin:${Versions.dcendents}"
     private const val jfrogBintray = "com.jfrog.bintray.gradle:gradle-bintray-plugin:${Versions.jfrogBintray}"
 
     val allProjectLevelPlugins = listOf(
-        gradleTools, timfreiheit, kotlinGradle, dcendents, jfrogBintray
+        gradleTools, timfreiheit, dcendents, jfrogBintray
     )
 }
 
@@ -33,10 +32,10 @@ object AppPlugins {
 object CustomLibs {
     //Do not make these private even after auto suggestion
     // TODO: 20/07/20 try to add these to settings.gradle.kts
-    const val LIB_COMMONS = ":Commons"
+    const val libCommons = ":Commons"
 
     val allCustomLibs = listOf(
-        LIB_COMMONS
+        libCommons
     )
 }
 
@@ -44,15 +43,17 @@ object CustomView {
 
     //Do not make these private even after auto suggestion
     // TODO: 20/07/20 try to add these to settings.gradle.kts
-    const val BUBBLE_HEADS = ":BubbleHeadsView"
-    const val CALC_DIALOG = ":CalculatorDialogView"
-    const val PAGE_FLIP = ":PageFlipView"
+    const val bubbleHeads = ":BubbleHeadsView"
+    const val calcDialog = ":CalculatorDialogView"
+    const val pageFlip = ":PageFlipView"
+    const val stickyTimeline = ":StickyTimeline"
 
     val allCustomViews: List<String> =
         listOf(
-            BUBBLE_HEADS,
-            CALC_DIALOG,
-            PAGE_FLIP
+            bubbleHeads,
+            calcDialog,
+            pageFlip,
+            stickyTimeline
         )
 }
 
@@ -91,22 +92,21 @@ object Deps { // Do not make these private even after auto suggestion
     const val espresso = "androidx.test.espresso:espresso-core:${Versions.ESPRESSO}"
 
     //commons
-    val allCommonImplDeps = listOf(stdlib, coreKTX, constraintLayout, androignito, docFile, swipeRefreshLayout)
-    val allCommonApiDeps = listOf(ajalt, dulingoRTL, gson, appCompat, material, glide)
+    val allCommonApiDeps = listOf(
+        stdlib, coreKTX, constraintLayout, androignito, docFile, swipeRefreshLayout,
+        ajalt, dulingoRTL, gson, appCompat, material, glide
+    )
 
     //App
     val allAppImplDeps: List<String> = listOf(
-        stdlib, jodaTime, multidex, coreKTX, material, swipeRefreshLayout, room, appCompat,
-        lifeCycleExtensions, constraintLayout, docFile, exifInterface, glide, androignito
+        jodaTime, multidex, material, room, appCompat, lifeCycleExtensions, exifInterface, glide
     )
 
-    val allAppApiDeps = listOf(ajalt, dulingoRTL, gson)
+    val allCommonKaptDeps = listOf(roomCompiler, glideCompiler)
 
-    val allAppKaptDeps = listOf(roomCompiler, glideCompiler)
+    val allCommonTestImplDeps = listOf(junit)
 
-    val allAppTestImplDeps = listOf(junit)
-
-    val allAppAndroidTestImplDeps = listOf(junitExt, espresso)
+    val allCommonAndroidTestImplDeps = listOf(junitExt, espresso)
 }
 
 object Versions {
@@ -120,13 +120,13 @@ object Versions {
     val compileJavaVersion = JavaVersion.VERSION_1_8
 
     //project plugins
-    const val kotlinGradle = "1.3.72"
     const val gradleTools = "4.0.1"
     const val timfreiheit = "0.3"
     const val dcendents = "2.1"
-
     const val jfrogBintray = "1.8.4"
+
     //libs
+    const val kotlinGradle = "1.3.72"
     const val ROOM = "2.2.5"
     const val GLIDE = "4.11.0"
     const val MATERIAL = "1.1.0"
@@ -135,7 +135,7 @@ object Versions {
     const val CORE_KTX = "1.3.0"
     const val LIFE_CYCLE_EXT = "2.2.0"
     const val FRAGMENTS = "1.3.0-alpha07"
-    const val CONSTRAINT_LAYOUT = "2.0.0-beta8"
+    const val CONSTRAINT_LAYOUT = "2.0.0-rc1"
     const val DOC_FILE = "1.0.1"
     const val EXIF_INTERFACE = "1.2.0"
     const val AJALT = "3.3.0@aar"

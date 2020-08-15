@@ -2,7 +2,7 @@ plugins {
     id(AppPlugins.library)
     kotlin(AppPlugins.android)
     kotlin(AppPlugins.androidExtensions)
-    }
+}
 
 android {
     compileSdkVersion(Versions.compileSdkVersion)

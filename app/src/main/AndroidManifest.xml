@@ -24,7 +24,7 @@
         android:required="false" />
 
     <application
-        android:name=".calendar.App"
+        android:name=".application.App"
         android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_launcher_name"
@@ -180,7 +180,7 @@
         -->
         <activity android:name=".demos.stickytimeline.StickyTimelineActivity">
         </activity>
-        <activity android:name=".demos.calendar.SimpleCalendarActivity">
+        <activity android:name=".calendar.activities.SimpleCalendarActivity">
         </activity>
         <activity android:name=".demos.draggabletree.DraggableTreeActivity">
         </activity>

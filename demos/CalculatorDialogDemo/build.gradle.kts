@@ -27,7 +27,7 @@ android {
 }
 
 dependencies {
-    implementation(project(CustomView.CALC_DIALOG))
+    implementation(project(CustomView.calcDialog))
     implementation(Deps.appCompat)
     implementation(Deps.constraintLayout)
     implementation(Deps.material)

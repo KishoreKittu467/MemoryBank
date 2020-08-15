@@ -19,7 +19,9 @@ customlibs/Commons/build
 customviews/BubbleHeadsView/build
 customviews/CalculatorDialogView/build
 customviews/PageFlipView/build
+customviews/StickyTimeline/build
 
 demos/BubbleHeadsDemo/build
 demos/CalculatorDialogDemo/build
 demos/PageFlipDemo/build
+demos/StickyTimelineDemo/build
