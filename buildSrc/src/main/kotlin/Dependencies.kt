@@ -2,9 +2,12 @@ import org.gradle.api.JavaVersion
 
 object ProjectPlugins {
     private const val gradleTools = "com.android.tools.build:gradle:${Versions.gradleTools}"
-    private const val timfreiheit = "de.timfreiheit.resourceplaceholders:placeholders:${Versions.timfreiheit}"
-    private const val dcendents = "com.github.dcendents:android-maven-gradle-plugin:${Versions.dcendents}"
-    private const val jfrogBintray = "com.jfrog.bintray.gradle:gradle-bintray-plugin:${Versions.jfrogBintray}"
+    private const val timfreiheit =
+        "de.timfreiheit.resourceplaceholders:placeholders:${Versions.timfreiheit}"
+    private const val dcendents =
+        "com.github.dcendents:android-maven-gradle-plugin:${Versions.dcendents}"
+    private const val jfrogBintray =
+        "com.jfrog.bintray.gradle:gradle-bintray-plugin:${Versions.jfrogBintray}"
 
     val allProjectLevelPlugins = listOf(
         gradleTools, timfreiheit, dcendents, jfrogBintray
@@ -22,6 +25,7 @@ object AppPlugins {
     const val library = "com.android.library"
 
     const val timfreiheit = "de.timfreiheit.resourceplaceholders"
+
     //kotlin
     const val android = "android"
     const val androidExtensions = "android.extensions"
@@ -31,30 +35,34 @@ object AppPlugins {
 
 object CustomLibs {
     //Do not make these private even after auto suggestion
-    // TODO: 20/07/20 try to add these to settings.gradle.kts
     const val libCommons = ":Commons"
 
-    val allCustomLibs = listOf(
+    /**
+     * Should be same as {@path Settings_gradle.Constants.CustomLibs.enabledCustomLibs}
+     **/
+    val enabledCustomLibs = listOf(
         libCommons
     )
 }
 
-object CustomView {
-
+object CustomViews {
     //Do not make these private even after auto suggestion
-    // TODO: 20/07/20 try to add these to settings.gradle.kts
-    const val bubbleHeads = ":BubbleHeadsView"
-    const val calcDialog = ":CalculatorDialogView"
-    const val pageFlip = ":PageFlipView"
-    const val stickyTimeline = ":StickyTimeline"
+    const val bubbleHeads       = ":BubbleHeadsView"
+    const val calcDialog        = ":CalculatorDialogView"
+    const val draggableTree     = ":DraggableTreeView"
+    const val pageFlip          = ":PageFlipView"
+    const val stickyTimeline    = ":StickyTimelineView"
 
-    val allCustomViews: List<String> =
-        listOf(
-            bubbleHeads,
-            calcDialog,
-            pageFlip,
-            stickyTimeline
-        )
+    /**
+     * Should be same as {@path Settings_gradle.Constants.CustomLibs.enabledCustomViews}
+     **/
+    val enabledCustomViews = listOf(
+        bubbleHeads,
+        draggableTree,
+        calcDialog,
+        pageFlip,
+        stickyTimeline
+    )
 }
 
 object Deps { // Do not make these private even after auto suggestion
@@ -64,11 +72,14 @@ object Deps { // Do not make these private even after auto suggestion
     const val multidex = "androidx.multidex:multidex:${Versions.MULTIDEX}"
     const val coreKTX = "androidx.core:core-ktx:${Versions.CORE_KTX}"
     const val material = "com.google.android.material:material:${Versions.MATERIAL}"
-    const val swipeRefreshLayout = "androidx.swiperefreshlayout:swiperefreshlayout:${Versions.MATERIAL}"
+    const val swipeRefreshLayout =
+        "androidx.swiperefreshlayout:swiperefreshlayout:${Versions.MATERIAL}"
     const val room = "androidx.room:room-runtime:${Versions.ROOM}"
-    const val lifeCycleExtensions = "androidx.lifecycle:lifecycle-extensions:${Versions.LIFE_CYCLE_EXT}"
+    const val lifeCycleExtensions =
+        "androidx.lifecycle:lifecycle-extensions:${Versions.LIFE_CYCLE_EXT}"
     const val fragments = "androidx.fragment:fragment:${Versions.FRAGMENTS}"
-    const val constraintLayout = "androidx.constraintlayout:constraintlayout:${Versions.CONSTRAINT_LAYOUT}"
+    const val constraintLayout =
+        "androidx.constraintlayout:constraintlayout:${Versions.CONSTRAINT_LAYOUT}"
     const val docFile = "androidx.documentfile:documentfile:${Versions.DOC_FILE}"
     const val exifInterface = "androidx.exifinterface:exifinterface:${Versions.EXIF_INTERFACE}"
     const val glide = "com.github.bumptech.glide:glide:${Versions.GLIDE}"

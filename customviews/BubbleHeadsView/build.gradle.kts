@@ -27,11 +27,11 @@ android {
 }
 
 dependencies {
-    implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
-    implementation(Deps.stdlib)
-    implementation(Deps.coreKTX)
-    implementation(Deps.appCompat)
-    implementation(Deps.material)
+    api(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
+    api(Deps.stdlib)
+    api(Deps.coreKTX)
+    api(Deps.appCompat)
+    api(Deps.material)
 
     testImplementation(Deps.junit)
     androidTestImplementation(Deps.junitExt)

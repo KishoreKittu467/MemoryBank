@@ -27,5 +27,5 @@ android {
 }
 
 dependencies {
-    implementation(project(CustomView.stickyTimeline))
+    implementation(project(CustomViews.stickyTimeline))
 }

@@ -23,3 +23,9 @@ allprojects {
         maven { url = uri(Repositories.jitpack) }
     }
 }
+
+subprojects {
+    if (name != "app") {
+        apply(plugin = "common-scripts")
+    }
+}

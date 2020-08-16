@@ -8,13 +8,16 @@ import android.content.res.Resources
 import android.content.res.TypedArray
 import android.graphics.Rect
 import android.os.Bundle
-import android.view.*
-import android.widget.Button
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import android.view.Window
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatDialogFragment
 import androidx.appcompat.content.res.AppCompatResources
+import androidx.appcompat.view.ContextThemeWrapper
 import com.kkapps.calculator.CalcEraseButton.EraseListener
-import kotlinx.android.synthetic.main.dialog_calc.*
+import kotlinx.android.synthetic.main.dialog_calc.view.*
 import java.math.BigDecimal
 
 /**
@@ -22,6 +25,7 @@ import java.math.BigDecimal
  * All settings must be set before showing the dialog or unexpected behavior will occur.
  */
 class CalcDialog : AppCompatDialogFragment() {
+    private lateinit var contentView: View
     private var fragcontext: Context? = null
     private var presenter: CalcPresenter? = null
 
@@ -46,124 +50,112 @@ class CalcDialog : AppCompatDialogFragment() {
 
     @SuppressLint("InflateParams")
     override fun onCreateDialog(state: Bundle?): Dialog {
-        val inflater = LayoutInflater.from(context)
-        val view =
-            inflater.inflate(R.layout.dialog_calc, null)
+        contentView = LayoutInflater.from(context).inflate(R.layout.dialog_calc, null)
+        val dialog = Dialog(requireContext())
 
-        // Get attributes
-        val ta = fragcontext!!.obtainStyledAttributes(R.styleable.CalcDialog)
-        val btnTexts = ta.getTextArray(R.styleable.CalcDialog_calcButtonTexts)
-        errorMessages = ta.getTextArray(R.styleable.CalcDialog_calcErrors)
-        val maxDialogWidth = ta.getDimensionPixelSize(R.styleable.CalcDialog_calcDialogMaxWidth, -1)
-        val maxDialogHeight = ta.getDimensionPixelSize(R.styleable.CalcDialog_calcDialogMaxHeight, -1)
-        val headerColor = getColor(ta, R.styleable.CalcDialog_calcHeaderColor)
-        val headerElevationColor = getColor(ta, R.styleable.CalcDialog_calcHeaderElevationColor)
-        val separatorColor = getColor(ta, R.styleable.CalcDialog_calcDividerColor)
-        val numberBtnColor = getColor(ta, R.styleable.CalcDialog_calcDigitBtnColor)
-        val operationBtnColor = getColor(ta, R.styleable.CalcDialog_calcOperationBtnColor)
-        ta.recycle()
+        contentView.apply {
+            // Get attributes
+            val ta = fragcontext!!.obtainStyledAttributes(R.styleable.CalcDialog)
+            val btnTexts = ta.getTextArray(R.styleable.CalcDialog_calcButtonTexts)
+            errorMessages = ta.getTextArray(R.styleable.CalcDialog_calcErrors)
+            val maxDialogWidth =
+                ta.getDimensionPixelSize(R.styleable.CalcDialog_calcDialogMaxWidth, -1)
+            val maxDialogHeight =
+                ta.getDimensionPixelSize(R.styleable.CalcDialog_calcDialogMaxHeight, -1)
+            val headerColor = getColor(ta, R.styleable.CalcDialog_calcHeaderColor)
+            val headerElevationColor = getColor(ta, R.styleable.CalcDialog_calcHeaderElevationColor)
+            val separatorColor = getColor(ta, R.styleable.CalcDialog_calcDividerColor)
+            val numberBtnColor = getColor(ta, R.styleable.CalcDialog_calcDigitBtnColor)
+            val operationBtnColor = getColor(ta, R.styleable.CalcDialog_calcOperationBtnColor)
+            ta.recycle()
 
-        // Header
-        val headerBgView =
-            view.findViewById<View>(R.id.calc_view_header_background)
-        val headerElevationBgView =
-            view.findViewById<View>(R.id.calc_view_header_elevation)
-        headerBgView.setBackgroundColor(headerColor)
-        headerElevationBgView.setBackgroundColor(headerElevationColor)
-        headerElevationBgView.visibility = View.GONE
+            // Header
+            calc_view_header_background.setBackgroundColor(headerColor)
+            calc_view_header_elevation.setBackgroundColor(headerElevationColor)
+            calc_view_header_elevation.visibility = View.GONE
 
 
-        // Erase button
-        val eraseBtn: CalcEraseButton = view.findViewById(R.id.calc_btn_erase)
-        eraseBtn.setOnEraseListener(object : EraseListener {
-            override fun onErase() {
-                presenter!!.onErasedOnce()
+            // Erase button
+            calc_btn_erase.setOnEraseListener(object : EraseListener {
+                override fun onErase() {
+                    presenter!!.onErasedOnce()
+                }
+
+                override fun onEraseAll() {
+                    presenter!!.onErasedAll()
+                }
+            })
+
+            // Digit buttons
+            for (i in 0..9) {
+                val digitBtn = contentView.findViewById<TextView>(settings!!.numpadLayout.buttonIds[i])
+                digitBtn.text = btnTexts[i]
+                digitBtn.setOnClickListener { presenter!!.onDigitBtnClicked(i) }
             }
+            calc_view_number_bg.setBackgroundColor(numberBtnColor)
 
-            override fun onEraseAll() {
-                presenter!!.onErasedAll()
+            // Operator buttons
+            calc_btn_add.text = btnTexts[TEXT_INDEX_ADD]
+            calc_btn_sub.text = btnTexts[TEXT_INDEX_SUB]
+            calc_btn_mul.text = btnTexts[TEXT_INDEX_MUL]
+            calc_btn_div.text = btnTexts[TEXT_INDEX_DIV]
+            calc_btn_add.setOnClickListener { presenter!!.onOperatorBtnClicked(Expression.Operator.ADD) }
+            calc_btn_sub.setOnClickListener { presenter!!.onOperatorBtnClicked(Expression.Operator.SUBTRACT) }
+            calc_btn_mul.setOnClickListener { presenter!!.onOperatorBtnClicked(Expression.Operator.MULTIPLY) }
+            calc_btn_div.setOnClickListener { presenter!!.onOperatorBtnClicked(Expression.Operator.DIVIDE) }
+            calc_view_op_bg.setBackgroundColor(operationBtnColor)
+
+            // Sign button: +/-
+            calc_btn_sign.text = btnTexts[TEXT_INDEX_SIGN]
+            calc_btn_sign.setOnClickListener { presenter!!.onSignBtnClicked() }
+
+            // Decimal separator button
+            calc_btn_decimal.text = btnTexts[TEXT_INDEX_DEC_SEP]
+            calc_btn_decimal.setOnClickListener { presenter!!.onDecimalSepBtnClicked() }
+
+            // Equal button
+            calc_btn_equal.text = btnTexts[TEXT_INDEX_EQUAL]
+            calc_btn_equal.setOnClickListener { presenter!!.onEqualBtnClicked() }
+
+            // Answer button
+            calc_btn_answer.setOnClickListener { presenter!!.onAnswerBtnClicked() }
+
+            // Divider
+            calc_view_footer_divider.setBackgroundColor(separatorColor)
+
+            // Dialog buttons
+            calc_btn_clear.setOnClickListener { presenter!!.onClearBtnClicked() }
+
+            calc_btn_cancel.setOnClickListener { presenter!!.onCancelBtnClicked() }
+
+            calc_btn_ok.setOnClickListener { presenter!!.onOkBtnClicked() }
+
+            // Set up dialog
+            dialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
+            dialog.setOnShowListener { // Get maximum dialog dimensions
+                val fgPadding = Rect()
+                dialog.window!!.decorView.background.getPadding(fgPadding)
+                val metrics =
+                    Resources.getSystem().displayMetrics
+                var height = metrics.heightPixels - fgPadding.top - fgPadding.bottom
+                var width = metrics.widthPixels - fgPadding.top - fgPadding.bottom
+
+                // Set dialog's dimensions
+                if (width > maxDialogWidth) width = maxDialogWidth
+                if (height > maxDialogHeight) height = maxDialogHeight
+                dialog.window!!.setLayout(width, height)
+
+                // Set dialog's content
+                contentView.layoutParams = ViewGroup.LayoutParams(width, height)
+                dialog.setContentView(contentView)
+
+                // Presenter
+                presenter = CalcPresenter()
+                presenter!!.attach(this@CalcDialog, state)
             }
-        })
-
-        // Digit buttons
-        for (i in 0..9) {
-            val digitBtn = view.findViewById<TextView>(settings!!.numpadLayout.buttonIds[i])
-            digitBtn.text = btnTexts[i]
-            digitBtn.setOnClickListener { presenter!!.onDigitBtnClicked(i) }
-        }
-        val numberBtnBgView = view.findViewById<View>(R.id.calc_view_number_bg)
-        numberBtnBgView.setBackgroundColor(numberBtnColor)
-
-        // Operator buttons
-        val addBtn = view.findViewById<TextView>(R.id.calc_btn_add)
-        val subBtn = view.findViewById<TextView>(R.id.calc_btn_sub)
-        val mulBtn = view.findViewById<TextView>(R.id.calc_btn_mul)
-        val divBtn = view.findViewById<TextView>(R.id.calc_btn_div)
-        addBtn.text = btnTexts[TEXT_INDEX_ADD]
-        subBtn.text = btnTexts[TEXT_INDEX_SUB]
-        mulBtn.text = btnTexts[TEXT_INDEX_MUL]
-        divBtn.text = btnTexts[TEXT_INDEX_DIV]
-        addBtn.setOnClickListener { presenter!!.onOperatorBtnClicked(Expression.Operator.ADD) }
-        subBtn.setOnClickListener { presenter!!.onOperatorBtnClicked(Expression.Operator.SUBTRACT) }
-        mulBtn.setOnClickListener { presenter!!.onOperatorBtnClicked(Expression.Operator.MULTIPLY) }
-        divBtn.setOnClickListener { presenter!!.onOperatorBtnClicked(Expression.Operator.DIVIDE) }
-        calc_view_op_bg.setBackgroundColor(operationBtnColor)
-
-        // Sign button: +/-
-        calc_btn_sign.text = btnTexts[TEXT_INDEX_SIGN]
-        calc_btn_sign.setOnClickListener { presenter!!.onSignBtnClicked() }
-
-        // Decimal separator button
-        calc_btn_decimal.text = btnTexts[TEXT_INDEX_DEC_SEP]
-        calc_btn_decimal.setOnClickListener { presenter!!.onDecimalSepBtnClicked() }
-
-        // Equal button
-        calc_btn_equal.text = btnTexts[TEXT_INDEX_EQUAL]
-        calc_btn_equal.setOnClickListener { presenter!!.onEqualBtnClicked() }
-
-        // Answer button
-        calc_btn_answer.setOnClickListener { presenter!!.onAnswerBtnClicked() }
-
-        // Divider
-        val footerDividerView = view.findViewById<View>(R.id.calc_view_footer_divider)
-        footerDividerView.setBackgroundColor(separatorColor)
-
-        // Dialog buttons
-        val clearBtn = view.findViewById<Button>(R.id.calc_btn_clear)
-        clearBtn.setOnClickListener { presenter!!.onClearBtnClicked() }
-
-        val cancelBtn = view.findViewById<Button>(R.id.calc_btn_cancel)
-        cancelBtn.setOnClickListener { presenter!!.onCancelBtnClicked() }
-
-        val okBtn = view.findViewById<Button>(R.id.calc_btn_ok)
-        okBtn.setOnClickListener { presenter!!.onOkBtnClicked() }
-
-        // Set up dialog
-        val dialog = Dialog(context!!)
-        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
-        dialog.setOnShowListener { // Get maximum dialog dimensions
-            val fgPadding = Rect()
-            dialog.window!!.decorView.background.getPadding(fgPadding)
-            val metrics =
-                Resources.getSystem().displayMetrics
-            var height = metrics.heightPixels - fgPadding.top - fgPadding.bottom
-            var width = metrics.widthPixels - fgPadding.top - fgPadding.bottom
-
-            // Set dialog's dimensions
-            if (width > maxDialogWidth) width = maxDialogWidth
-            if (height > maxDialogHeight) height = maxDialogHeight
-            dialog.window!!.setLayout(width, height)
-
-            // Set dialog's content
-            view.layoutParams = ViewGroup.LayoutParams(width, height)
-            dialog.setContentView(view)
-
-            // Presenter
-            presenter = CalcPresenter()
-            presenter!!.attach(this@CalcDialog, state)
-        }
-        if (state != null) {
-            settings = state.getParcelable("settings")
+            if (state != null) {
+                settings = state.getParcelable("settings")
+            }
         }
         return dialog
     }
@@ -176,7 +168,7 @@ class CalcDialog : AppCompatDialogFragment() {
         } else {
             // Color reference pointing to color state list or raw color.
             AppCompatResources.getColorStateList(
-                context!!,
+                requireContext(),
                 resId
             ).defaultColor
         }
@@ -244,44 +236,59 @@ class CalcDialog : AppCompatDialogFragment() {
     }
 
     fun sendValueResult(value: BigDecimal?) {
-        val cb = callback
-        cb?.onValueEntered(settings!!.requestCode, value)
+        callback?.onValueEntered(settings!!.requestCode, value)
     }
 
     fun setExpressionVisible(visible: Boolean) {
-        calc_hsv_expression.visibility = if (visible) View.VISIBLE else View.GONE
+        contentView.apply {
+            calc_hsv_expression.visibility = if (visible) View.VISIBLE else View.GONE
+        }
     }
 
     fun setAnswerBtnVisible(visible: Boolean) {
-        calc_btn_answer.visibility = if (visible) View.VISIBLE else View.INVISIBLE
-        calc_btn_equal.visibility = if (visible) View.INVISIBLE else View.VISIBLE
+        contentView.apply {
+            calc_btn_answer.visibility = if (visible) View.VISIBLE else View.INVISIBLE
+            calc_btn_equal.visibility = if (visible) View.INVISIBLE else View.VISIBLE
+        }
     }
 
     fun setSignBtnVisible(visible: Boolean) {
-        calc_btn_sign.visibility = if (visible) View.VISIBLE else View.INVISIBLE
+        contentView.apply {
+            calc_btn_sign.visibility = if (visible) View.VISIBLE else View.INVISIBLE
+        }
     }
 
     fun setDecimalSepBtnEnabled(enabled: Boolean) {
-        calc_btn_decimal.isEnabled = enabled
+        contentView.apply {
+            calc_btn_decimal.isEnabled = enabled
+        }
     }
 
     fun updateExpression(text: String) {
-        calc_txv_expression.text = text
+        contentView.apply {
+            calc_txv_expression.text = text
+            // Scroll to the end.
+            calc_hsv_expression.post { calc_hsv_expression.fullScroll(View.FOCUS_RIGHT) }
+        }
 
-        // Scroll to the end.
-        calc_hsv_expression.post { calc_hsv_expression.fullScroll(View.FOCUS_RIGHT) }
     }
 
     fun updateCurrentValue(text: String?) {
-        calc_txv_value.text = text
+        contentView.apply {
+            calc_txv_value.text = text
+        }
     }
 
     fun showErrorText(error: Int) {
-        calc_txv_value.text = errorMessages?.get(error) ?: ""
+        contentView.apply {
+            calc_txv_value.text = errorMessages?.get(error) ?: ""
+        }
     }
 
     fun showAnswerText() {
-        calc_txv_value.setText(R.string.calc_answer)
+        contentView.apply {
+            calc_txv_value.setText(R.string.calc_answer)
+        }
     }
 
     interface CalcDialogCallback {

@@ -6,8 +6,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.content.res.AppCompatResources
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.kkapps.stickytimeline.SectionInfo
-import com.kkapps.stickytimeline.VerticalSectionItemDecoration
+import com.kkapps.stickytimelineview.SectionInfo
+import com.kkapps.stickytimelineview.VerticalSectionItemDecoration
 import kotlinx.android.synthetic.main.sticky_timeline_activity.*
 
 class StickyTimelineActivity : AppCompatActivity() {

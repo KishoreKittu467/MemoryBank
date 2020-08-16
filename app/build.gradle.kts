@@ -45,6 +45,6 @@ android {
 dependencies {
     Deps.allAppImplDeps.forEach { implementation(it) }
     Deps.allCommonKaptDeps.forEach { kapt(it) }
-    CustomLibs.allCustomLibs.forEach { implementation(project(it)) }
-//    CustomView.allCustomViews.forEach { api(project(it)) }
+    CustomLibs.enabledCustomLibs.forEach { implementation(project(it)) }
+//    CustomView.enabledCustomViews.forEach { implementation(project(it)) }
 }

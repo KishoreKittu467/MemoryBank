@@ -10,8 +10,8 @@
         <item name="calcButtonTextCancel">@string/calc_dialog_cancel</item>
         <item name="calcButtonTextOk">@string/calc_dialog_ok</item>
         <item name="calcButtonTexts">@array/calc_dialog_btn_texts</item>
-        <item name="calcBackgroundColor">?colorBackgroundFloating</item>
-        <item name="calcHeaderColor">?calcBackgroundColor</item>
+        <item name="calcBackgroundColor">?android:attr/colorBackgroundFloating</item>
+        <item name="calcHeaderColor">?android:attr/colorBackgroundFloating</item>
         <item name="calcHeaderElevation">2dp</item>
         <item name="calcHeaderElevationColor">#33000000</item>
         <item name="calcValueStyle">@style/CalcValueStyle</item>
@@ -69,8 +69,7 @@
     <style name="CalcNumberBtnStyle">
         <item name="android:background">?selectableItemBackground</item>
         <item name="android:gravity">center</item>
-        <item name="android:textAppearance">@style/TextAppearance.MaterialComponents.Headline5
-        </item>
+        <item name="android:textAppearance">@style/TextAppearance.MaterialComponents.Headline5</item>
         <item name="android:textSize">28sp</item>
     </style>
 
@@ -108,11 +107,14 @@
 
     <public name="CalcDialogButtonStyle" type="style" />
 
-    <style name="CalcDialogButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog" />
+    <style name="CalcDialogButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textAppearance">@style/TextAppearance.MaterialComponents.Body1</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
 
     <!-- To customize calculator dialog's style -->
     <style name="CustomCalcDialogStyle" parent="CalcDialogStyle">
-        <!--        <item name="calcNumberBtnStyle">@style/CustomNumberBtnStyle</item>-->
+<!--        <item name="calcNumberBtnStyle">@style/CustomNumberBtnStyle</item>-->
     </style>
 
     <style name="CustomNumberBtnStyle" parent="CalcNumberBtnStyle">

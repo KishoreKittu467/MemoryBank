@@ -28,9 +28,7 @@ android {
 }
 
 dependencies {
-    implementation(project(CustomView.bubbleHeads))
-    implementation(Deps.appCompat)
-    implementation(Deps.material)
+    implementation(project(CustomViews.bubbleHeads))
     implementation(Deps.glide)
     kapt(Deps.glideCompiler)
 }

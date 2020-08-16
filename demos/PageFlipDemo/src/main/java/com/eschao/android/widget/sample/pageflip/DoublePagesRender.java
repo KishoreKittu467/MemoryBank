@@ -7,7 +7,6 @@ import android.graphics.Paint;
 import android.graphics.Rect;
 import android.os.Handler;
 import android.os.Message;
-import android.widget.Toast;
 
 import com.eschao.android.widget.pageflip.Page;
 import com.eschao.android.widget.pageflip.PageFlip;
@@ -40,7 +39,7 @@ public class DoublePagesRender extends PageRender {
 
     /**
      * Constructor
-     * @see {@link #PageRender(Context, PageFlip, Handler, int)}
+     * @see PageRender(Context, PageFlip, Handler, int)
      */
     public DoublePagesRender(Context context, PageFlip pageFlip,
                              Handler handler, int pageNo) {

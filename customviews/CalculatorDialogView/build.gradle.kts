@@ -2,6 +2,7 @@ plugins {
     id(AppPlugins.library)
     kotlin(AppPlugins.android)
     kotlin(AppPlugins.androidExtensions)
+    kotlin(AppPlugins.kapt)
 }
 
 android {
@@ -35,13 +36,13 @@ android {
 }
 
 dependencies {
-    implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
+    api(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
     implementation(Deps.stdlib)
     implementation(Deps.coreKTX)
-    implementation(Deps.appCompat)
-    implementation(Deps.constraintLayout)
     implementation(Deps.fragments)
-    implementation(Deps.material)
+    api(Deps.appCompat)
+    api(Deps.constraintLayout)
+    api(Deps.material)
     testImplementation(Deps.junit)
     androidTestImplementation(Deps.junitExt)
     androidTestImplementation(Deps.espresso)
