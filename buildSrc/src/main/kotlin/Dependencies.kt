@@ -1,11 +1,13 @@
 import org.gradle.api.JavaVersion
 
 object ProjectPlugins {
-    private const val gradleTools = "com.android.tools.build:gradle:${Versions.gradleTools}"
+    private const val gradleTools =
+        "com.android.tools.build:gradle:${Versions.gradleTools}"
     private const val timfreiheit =
         "de.timfreiheit.resourceplaceholders:placeholders:${Versions.timfreiheit}"
     private const val dcendents =
         "com.github.dcendents:android-maven-gradle-plugin:${Versions.dcendents}"
+
     private const val jfrogBintray =
         "com.jfrog.bintray.gradle:gradle-bintray-plugin:${Versions.jfrogBintray}"
 
@@ -47,6 +49,7 @@ object CustomLibs {
 
 object CustomViews {
     //Do not make these private even after auto suggestion
+    const val autoLink         = ":AutoLinkTextView"
     const val bubbleHeads       = ":BubbleHeadsView"
     const val calcDialog        = ":CalculatorDialogView"
     const val draggableTree     = ":DraggableTreeView"
@@ -57,6 +60,7 @@ object CustomViews {
      * Should be same as {@path Settings_gradle.Constants.CustomLibs.enabledCustomViews}
      **/
     val enabledCustomViews = listOf(
+        autoLink,
         bubbleHeads,
         draggableTree,
         calcDialog,
@@ -73,7 +77,7 @@ object Deps { // Do not make these private even after auto suggestion
     const val coreKTX = "androidx.core:core-ktx:${Versions.CORE_KTX}"
     const val material = "com.google.android.material:material:${Versions.MATERIAL}"
     const val swipeRefreshLayout =
-        "androidx.swiperefreshlayout:swiperefreshlayout:${Versions.MATERIAL}"
+        "androidx.swiperefreshlayout:swiperefreshlayout:${Versions.SWIPE_REFRESH}"
     const val room = "androidx.room:room-runtime:${Versions.ROOM}"
     const val lifeCycleExtensions =
         "androidx.lifecycle:lifecycle-extensions:${Versions.LIFE_CYCLE_EXT}"
@@ -137,10 +141,11 @@ object Versions {
     const val jfrogBintray = "1.8.4"
 
     //libs
-    const val kotlinGradle = "1.3.72"
+    const val kotlinGradle = "1.4.0"
     const val ROOM = "2.2.5"
     const val GLIDE = "4.11.0"
-    const val MATERIAL = "1.1.0"
+    const val MATERIAL = "1.2.0"
+    const val SWIPE_REFRESH = "1.1.0"
     const val JODA_TIME = "2.10.2"
     const val MULTIDEX = "2.0.1"
     const val CORE_KTX = "1.3.0"

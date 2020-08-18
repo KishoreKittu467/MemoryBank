@@ -40,8 +40,8 @@ import org.joda.time.LocalDate
 import java.util.*
 
 val Context.config: Config get() = Config.newInstance(applicationContext)
-val Context.eventsDB: EventsDao get() = EventsDatabase.getInstance(applicationContext).EventsDao()
-val Context.eventTypesDB: EventTypesDao get() = EventsDatabase.getInstance(applicationContext).EventTypesDao()
+val Context.eventsDB: EventsDao get() = EventsDatabase.getInstance(applicationContext).eventsDao()
+val Context.eventTypesDB: EventTypesDao get() = EventsDatabase.getInstance(applicationContext).eventTypesDao()
 val Context.eventsHelper: EventsHelper get() = EventsHelper(this)
 val Context.calDAVHelper: CalDAVHelper get() = CalDAVHelper(this)
 

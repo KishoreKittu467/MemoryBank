@@ -8,18 +8,16 @@ import Settings_gradle.Constants.enableMasterApp
 import Settings_gradle.Constants.pathSeparator
 import Settings_gradle.Constants.projectName
 
-//includeEnabledCustomLibs()
-includeEnabledApps(enableMasterApp)
-
 rootProject.name = projectName
 rootProject.buildFileName = buildFileName
 
-fun includeEnabledApps(isApp: Boolean) {
-    enabledCustomViews.keys.filter { it.isNotEmpty() }.forEach {
-        include(it)
-        project(it).projectDir = File(rootDir, "$customViewsPath$pathSeparator${it.substring(1)}")
-    }
-    if (isApp) {
+enableMasterApp = true
+//includeEnabledCustomViews()
+includeEnabledCustomLibs()
+includeEnabledApps()
+
+fun includeEnabledApps() {
+    if (enableMasterApp) {
         include(":app")
     } else {
         enabledCustomViews.values.filter { it.isNotEmpty() }.forEach {
@@ -30,9 +28,16 @@ fun includeEnabledApps(isApp: Boolean) {
 }
 
 fun includeEnabledCustomLibs() {
-    enabledCustomLibs.forEach { // replace allCustomViews with CustomView.allAvailable
+    enabledCustomLibs.filter { it.isNotEmpty() }.forEach {
         include(it)
         project(it).projectDir = File(rootDir, "$customLibsPath$pathSeparator${it.substring(1)}")
+    }
+}
+
+fun includeEnabledCustomViews() {
+    enabledCustomViews.keys.filter { it.isNotEmpty() }.forEach {
+        include(it)
+        project(it).projectDir = File(rootDir, "$customViewsPath$pathSeparator${it.substring(1)}")
     }
 }
 
@@ -64,9 +69,10 @@ private object Constants {
             if (enableMasterApp) {
                 /** here all CustomViews will be enabled,
                 no need to modify this if block all the time,
-                just add new row when a new module is created in the project
+                just add new row whenever a new module is created in the project
                  **/
                 mapOf(
+                    ":AutoLinkTextView"     to ":AutoLinkTextViewDemo",
                     ":BubbleHeadsView"      to ":BubbleHeadsDemo",
                     ":CalculatorDialogView" to ":CalculatorDialogDemo",
                     ":DraggableTreeView"    to ":DraggableTreeDemo",
@@ -75,7 +81,7 @@ private object Constants {
                 )
             } else { // here only below selected customViews will be enabled
                 mapOf(
-                    ":PageFlipView"         to ":PageFlipDemo"
+                    ":AutoLinkTextView"     to ":AutoLinkTextViewDemo"
                 )
             }
         }

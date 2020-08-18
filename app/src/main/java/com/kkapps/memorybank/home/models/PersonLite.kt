@@ -5,7 +5,7 @@ import androidx.room.PrimaryKey
 
 data class PersonLite(
 
-    @ColumnInfo(name = "name") @PrimaryKey var name: String,
+    @ColumnInfo(name = "name") var name: String,
     @ColumnInfo(name = "notes") var notes: String? = null,
     @ColumnInfo(name = "image") var image: Image? = null,
 

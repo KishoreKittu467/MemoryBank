@@ -1026,7 +1026,8 @@ fun AppCompatActivity.checkAppSideloading(): Boolean {
 
 fun AppCompatActivity.isAppSideloaded(): Boolean {
     return try {
-        getDrawable(R.drawable.ic_camera_vector)
+//        getDrawable(R.drawable.ic_camera_vector)
+        packageManager.getInstallerPackageName(packageName)?.isEmpty()
         false
     } catch (e: Exception) {
         true

@@ -17,13 +17,15 @@ app/build
 customlibs/Commons/build
 
 customviews/BubbleHeadsView/build
+customviews/AutoLinkTextView/build
+customviews/DraggableTreeView/build
 customviews/CalculatorDialogView/build
 customviews/PageFlipView/build
 customviews/StickyTimelineView/build
-customviews/DraggableTreeView/build
 
 demos/BubbleHeadsDemo/build
+demos/AutoLinkTextViewDemo/build
+demos/DraggableTreeDemo/build
 demos/CalculatorDialogDemo/build
 demos/PageFlipDemo/build
 demos/StickyTimelineDemo/build
-demos/DraggableTreeDemo/build

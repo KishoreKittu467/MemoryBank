@@ -44,3 +44,6 @@ dependencies {
     Deps.allCommonTestImplDeps.forEach { testImplementation(it) }
     Deps.allCommonAndroidTestImplDeps.forEach { androidTestImplementation(it) }
 }
+repositories {
+    google()
+}

@@ -21,9 +21,9 @@ import java.util.concurrent.Executors
 @TypeConverters(Converters::class)
 abstract class EventsDatabase : RoomDatabase() {
 
-    abstract fun EventsDao(): EventsDao
+    abstract fun eventsDao(): EventsDao
 
-    abstract fun EventTypesDao(): EventTypesDao
+    abstract fun eventTypesDao(): EventTypesDao
 
     companion object {
         private var db: EventsDatabase? = null
@@ -57,7 +57,7 @@ abstract class EventsDatabase : RoomDatabase() {
             Executors.newSingleThreadScheduledExecutor().execute {
                 val regularEvent = context.resources.getString(R.string.regular_event)
                 val eventType = EventType(REGULAR_EVENT_TYPE_ID, regularEvent, context.config.primaryColor)
-                db!!.EventTypesDao().insertOrUpdate(eventType)
+                db!!.eventTypesDao().insertOrUpdate(eventType)
                 context.config.addDisplayEventType(REGULAR_EVENT_TYPE_ID.toString())
             }
         }
