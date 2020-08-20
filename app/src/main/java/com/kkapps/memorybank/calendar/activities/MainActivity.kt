@@ -45,6 +45,7 @@ import com.kkapps.commons.interfaces.RefreshRecyclerViewListener
 import com.kkapps.commons.models.FAQItem
 import com.kkapps.commons.models.RadioItem
 import com.kkapps.commons.models.Release
+import com.kkapps.roomdbexplorer.RoomExplorer
 import kotlinx.android.synthetic.main.activity_main.*
 import org.joda.time.DateTime
 import org.joda.time.DateTimeZone
@@ -84,7 +85,8 @@ class MainActivity : SimpleActivity(), RefreshRecyclerViewListener {
         checkWhatsNewDialog()
         calendar_fab.beVisibleIf(config.storedView != YEARLY_VIEW && config.storedView != WEEKLY_VIEW)
         calendar_fab.setOnClickListener {
-            launchNewEventIntent(currentFragments.last().getNewEventDayCode())
+            RoomExplorer.show(this, EventsDatabase::class.java, "events.db")
+            //launchNewEventIntent(currentFragments.last().getNewEventDayCode())
         }
 
         storeStateVariables()

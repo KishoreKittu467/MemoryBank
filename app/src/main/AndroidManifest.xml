@@ -178,11 +178,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         -->
-        <activity android:name=".demos.stickytimeline.StickyTimelineActivity">
-        </activity>
+
+        <activity android:name="com.kkapps.roomdbexplorer.RoomExplorerActivity" />
+
         <activity android:name=".calendar.activities.SimpleCalendarActivity">
-        </activity>
-        <activity android:name=".demos.draggabletree.DraggableTreeActivity">
         </activity>
 
         <receiver

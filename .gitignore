@@ -15,6 +15,7 @@ buildSrc/build
 
 app/build
 customlibs/Commons/build
+customlibs/RoomDbExplorer/build
 
 customviews/BubbleHeadsView/build
 customviews/AutoLinkTextView/build
@@ -28,4 +29,5 @@ demos/AutoLinkTextViewDemo/build
 demos/DraggableTreeDemo/build
 demos/CalculatorDialogDemo/build
 demos/PageFlipDemo/build
+demos/RoomDbExplorerDemo/build
 demos/StickyTimelineDemo/build

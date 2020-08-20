@@ -38,12 +38,13 @@ object AppPlugins {
 object CustomLibs {
     //Do not make these private even after auto suggestion
     const val libCommons = ":Commons"
+    const val libRoomDbExp = ":RoomDbExplorer"
 
     /**
      * Should be same as {@path Settings_gradle.Constants.CustomLibs.enabledCustomLibs}
      **/
     val enabledCustomLibs = listOf(
-        libCommons
+        libCommons, libRoomDbExp
     )
 }
 
@@ -148,7 +149,7 @@ object Versions {
     const val SWIPE_REFRESH = "1.1.0"
     const val JODA_TIME = "2.10.2"
     const val MULTIDEX = "2.0.1"
-    const val CORE_KTX = "1.3.0"
+    const val CORE_KTX = "1.3.1"
     const val LIFE_CYCLE_EXT = "2.2.0"
     const val FRAGMENTS = "1.3.0-alpha07"
     const val CONSTRAINT_LAYOUT = "2.0.0-rc1"

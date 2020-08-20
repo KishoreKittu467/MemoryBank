@@ -1,0 +1,37 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.1"
+    defaultConfig {
+        applicationId "com.kkapps.roomdbexplorerdemo"
+        minSdkVersion 23
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation(project(CustomLibs.libRoomDbExp))
+    implementation(Deps.material)
+    implementation(Deps.constraintLayout)
+    implementation("com.github.gurleensethi:LiteUtilities:v1.3.0")
+    kapt(Deps.roomCompiler)
+
+    testImplementation(Deps.junit)
+    androidTestImplementation(Deps.junitExt)
+    androidTestImplementation(Deps.espresso)
+}
