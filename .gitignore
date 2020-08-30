@@ -22,6 +22,7 @@ customviews/AutoLinkTextView/build
 customviews/DraggableTreeView/build
 customviews/CalculatorDialogView/build
 customviews/PageFlipView/build
+customviews/SlidingCardsView/build
 customviews/StickyTimelineView/build
 
 demos/BubbleHeadsDemo/build
@@ -30,4 +31,5 @@ demos/DraggableTreeDemo/build
 demos/CalculatorDialogDemo/build
 demos/PageFlipDemo/build
 demos/RoomDbExplorerDemo/build
+demos/SlidingCardsDemo/build
 demos/StickyTimelineDemo/build

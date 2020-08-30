@@ -41,31 +41,34 @@ object CustomLibs {
     const val libRoomDbExp = ":RoomDbExplorer"
 
     /**
-     * Should be same as {@path Settings_gradle.Constants.CustomLibs.enabledCustomLibs}
+     * Should be same as {@path Settings_gradle.Constants.Apps.allCustomLibs}
      **/
-    val enabledCustomLibs = listOf(
-        libCommons, libRoomDbExp
+    val enabledCustomLibs = setOf(
+        libCommons,
+        libRoomDbExp
     )
 }
 
 object CustomViews {
     //Do not make these private even after auto suggestion
-    const val autoLink         = ":AutoLinkTextView"
-    const val bubbleHeads       = ":BubbleHeadsView"
-    const val calcDialog        = ":CalculatorDialogView"
-    const val draggableTree     = ":DraggableTreeView"
-    const val pageFlip          = ":PageFlipView"
-    const val stickyTimeline    = ":StickyTimelineView"
+    const val autoLink = ":AutoLinkTextView"
+    const val bubbleHeads = ":BubbleHeadsView"
+    const val calcDialog = ":CalculatorDialogView"
+    const val draggableTree = ":DraggableTreeView"
+    const val pageFlip = ":PageFlipView"
+    const val slidingCards = ":SlidingCardsView"
+    const val stickyTimeline = ":StickyTimelineView"
 
     /**
-     * Should be same as {@path Settings_gradle.Constants.CustomLibs.enabledCustomViews}
+     * Should be same as {@path Settings_gradle.Constants.Apps.allCustomViews}
      **/
-    val enabledCustomViews = listOf(
+    val enabledCustomViews = setOf(
         autoLink,
         bubbleHeads,
         draggableTree,
         calcDialog,
         pageFlip,
+        slidingCards,
         stickyTimeline
     )
 }
