@@ -139,7 +139,7 @@ object Versions {
     val compileJavaVersion = JavaVersion.VERSION_1_8
 
     //project plugins
-    const val gradleTools = "4.0.1"
+    const val gradleTools = "4.1.1"
     const val timfreiheit = "0.3"
     const val dcendents = "2.1"
     const val jfrogBintray = "1.8.4"

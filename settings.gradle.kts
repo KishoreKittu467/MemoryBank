@@ -1,8 +1,6 @@
 import Settings_gradle.Constants.Apps.allCustomLibs
 import Settings_gradle.Constants.Apps.allCustomViews
 import Settings_gradle.Constants.Apps.allModules
-import Settings_gradle.Constants.Apps.slidingCardsDemo
-import Settings_gradle.Constants.Apps.stickyTimelineDemo
 import Settings_gradle.Constants.app
 import Settings_gradle.Constants.buildFileName
 import Settings_gradle.Constants.customLibsPath
@@ -15,7 +13,7 @@ rootProject.name = projectName
 rootProject.buildFileName = buildFileName
 
 val enabledModules = setOf(
-    slidingCardsDemo
+    app
 )
 
 private object Constants {
@@ -113,32 +111,31 @@ fun includeEnabledApps() {
 }
 
 fun includeModule(module: CustomModule?) {
+    val includedModules = emptySet<String>()
     module?.apply {
         dependencies.filter{ it.isNotEmpty() }.forEach {
             includeModule(allModules[it])
         }
-        if (isEnabled && name.isNotEmpty()) {
+        if (name.isNotEmpty() && includedModules.contains(name).not()) {
             include(name)
             if (path.isNotEmpty()) {
                 project(name).projectDir = File(rootDir, "$path$pathSeparator${name.substring(1)}")
             }
-            allModules[name]?.isEnabled = false
+            includedModules.plus(name)
         }
     }
 }
 
 data class CustomModule(
     val name: String,
-    val dependencies: Set<String> = setOf(""),
-    var isEnabled: Boolean = true
+    val dependencies: Set<String> = emptySet()
 ) {
     val path by lazy {
         when {
-            app == name -> ""
+            name == app -> ""
             allCustomLibs.contains(name) -> customLibsPath
             allCustomViews.contains(name) -> customViewsPath
             else -> demoAppsPath
         }
     }
 }
-
